@@ -1,0 +1,73 @@
+<AutoPilot:ProjectResources xmlns:AutoPilot="com.autoesl.autopilot.ui.directiveView">
+    <sourceFile name="">
+        <directive functionName="bfs" label="loop_neighbors" functionLabel="">
+            <pragma name="UNROLL">
+                <option name="factor" value="2"/>
+            </pragma>
+        </directive>
+        <directive functionName="bfs" label="loop_neighbors" functionLabel="">
+            <pragma name="PIPELINE">
+                <option name="stp" value="" positionalBoolean="style"/>
+            </pragma>
+        </directive>
+        <directive functionName="bfs" label="" functionLabel="">
+            <pragma name="ARRAY_PARTITION">
+                <option name="variable" positionalBoolean="4" value="edges"/>
+                <option name="cyclic" value="" positionalBoolean="type"/>
+                <option name="factor" value="2"/>
+                <option name="dim" value="1"/>
+            </pragma>
+        </directive>
+        <directive functionName="bfs" label="" functionLabel="">
+            <pragma name="ARRAY_PARTITION">
+                <option name="variable" positionalBoolean="4" value="level_counts"/>
+                <option name="cyclic" value="" positionalBoolean="type"/>
+                <option name="factor" value="2"/>
+                <option name="dim" value="1"/>
+            </pragma>
+        </directive>
+        <directive functionName="bfs" label="loop_horizons" functionLabel="">
+            <pragma name="BIND_OP">
+                <option name="variable" positionalBoolean="4" value="horizon"/>
+                <option name="add" value="" positionalBoolean="op"/>
+                <option name="dsp" value="" positionalBoolean="impl"/>
+                <option name="latency" value="-1"/>
+            </pragma>
+        </directive>
+        <directive functionName="bfs" label="loop_nodes" functionLabel="">
+            <pragma name="BIND_OP">
+                <option name="variable" positionalBoolean="4" value="n"/>
+                <option name="add" value="" positionalBoolean="op"/>
+                <option name="fabric" value="" positionalBoolean="impl"/>
+                <option name="latency" value="-1"/>
+            </pragma>
+        </directive>
+        <directive functionName="bfs" label="loop_neighbors" functionLabel="">
+            <pragma name="BIND_OP">
+                <option name="variable" positionalBoolean="4" value="e"/>
+                <option name="add" value="" positionalBoolean="op"/>
+                <option name="fabric" value="" positionalBoolean="impl"/>
+                <option name="latency" value="-1"/>
+            </pragma>
+        </directive>
+        <directive functionName="bfs" label="loop_neighbors" functionLabel="">
+            <pragma name="BIND_OP">
+                <option name="variable" positionalBoolean="4" value="cnt"/>
+                <option name="add" value="" positionalBoolean="op"/>
+                <option name="fabric" value="" positionalBoolean="impl"/>
+                <option name="latency" value="-1"/>
+            </pragma>
+        </directive>
+        <directive functionName="bfs" label="" functionLabel="">
+            <pragma name="TOP">
+                <option name="name" value="bfs"/>
+            </pragma>
+        </directive>
+        <directive functionName="bfs" label="" functionLabel="">
+            <pragma name="TOP">
+                <option name="name" value="bfs"/>
+            </pragma>
+        </directive>
+    </sourceFile>
+</AutoPilot:ProjectResources>
+

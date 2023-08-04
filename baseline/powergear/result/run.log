@@ -1,0 +1,578 @@
+overall_mean: tensor([7.1008e+00, 4.0502e+05, 4.0445e+05, 4.0474e+05, 5.1476e+04, 1.5750e+04,
+        2.5377e+01, 7.9887e+00, 5.1258e+00, 3.3450e+00, 1.0454e+00, 2.9834e-01,
+        4.3410e+00])
+overall_std: tensor([6.8460e-01, 1.2693e+06, 1.2693e+06, 1.2693e+06, 1.0711e+05, 2.2327e+04,
+        4.4808e+01, 2.2273e+01, 1.4397e+01, 7.1539e+00, 2.7953e+00, 8.8548e-01,
+        1.7329e+01])
+train_set size = 8743, test_set size = 2186
+constructing new model
+model info: conv_type = <class 'hec_gnn.conv.Conv.HECConv'>, num_conv_layers = 3, in_channels = 34; hidden_channels = 128, batch_size = 128, lr = 0.0005, aggr_type = add, pool_type = add, loss = mape, use_overall = True,drop_out = 0.2
+number of used overall attributes: 13
+Epoch: 0001, Train mape_loss: 10.8497, Test MSE-MAE-MAPE: 0.2 - 0.27 - 0.6440
+INFO: save current best model: epoch = 1, val_mape = 0.644029289020493
+Epoch: 0002, Train mape_loss: 0.4547, Test MSE-MAE-MAPE: 0.1 - 0.14 - 0.3012
+INFO: save current best model: epoch = 2, val_mape = 0.3012109025290333
+Epoch: 0003, Train mape_loss: 0.3277, Test MSE-MAE-MAPE: 0.1 - 0.13 - 0.2698
+INFO: save current best model: epoch = 3, val_mape = 0.26984698698265447
+Epoch: 0004, Train mape_loss: 0.2815, Test MSE-MAE-MAPE: 0.0 - 0.10 - 0.2067
+INFO: save current best model: epoch = 4, val_mape = 0.20671930415632522
+Epoch: 0005, Train mape_loss: 0.2542, Test MSE-MAE-MAPE: 0.1 - 0.12 - 0.2390
+Epoch: 0006, Train mape_loss: 0.2270, Test MSE-MAE-MAPE: 0.0 - 0.10 - 0.1993
+INFO: save current best model: epoch = 6, val_mape = 0.19930311342171322
+Epoch: 0007, Train mape_loss: 0.2074, Test MSE-MAE-MAPE: 0.0 - 0.10 - 0.2087
+Epoch: 0008, Train mape_loss: 0.1809, Test MSE-MAE-MAPE: 0.0 - 0.08 - 0.1406
+INFO: save current best model: epoch = 8, val_mape = 0.14055151033597807
+Epoch: 0009, Train mape_loss: 0.1695, Test MSE-MAE-MAPE: 0.0 - 0.08 - 0.1448
+Epoch: 0010, Train mape_loss: 0.1557, Test MSE-MAE-MAPE: 0.1 - 0.09 - 0.1388
+INFO: save current best model: epoch = 10, val_mape = 0.138808208654915
+Epoch: 0011, Train mape_loss: 0.1510, Test MSE-MAE-MAPE: 0.0 - 0.09 - 0.1358
+INFO: save current best model: epoch = 11, val_mape = 0.1358049412113968
+Epoch: 0012, Train mape_loss: 0.1428, Test MSE-MAE-MAPE: 0.0 - 0.08 - 0.1184
+INFO: save current best model: epoch = 12, val_mape = 0.11844346039031256
+Epoch: 0013, Train mape_loss: 0.1348, Test MSE-MAE-MAPE: 0.0 - 0.08 - 0.1183
+INFO: save current best model: epoch = 13, val_mape = 0.11827579508761366
+Epoch: 0014, Train mape_loss: 0.1278, Test MSE-MAE-MAPE: 0.0 - 0.08 - 0.1166
+INFO: save current best model: epoch = 14, val_mape = 0.1166243621600623
+Epoch: 0015, Train mape_loss: 0.1260, Test MSE-MAE-MAPE: 0.0 - 0.08 - 0.1149
+INFO: save current best model: epoch = 15, val_mape = 0.11494307750316246
+Epoch: 0016, Train mape_loss: 0.1230, Test MSE-MAE-MAPE: 0.0 - 0.07 - 0.1151
+Epoch: 0017, Train mape_loss: 0.1244, Test MSE-MAE-MAPE: 0.0 - 0.07 - 0.1141
+INFO: save current best model: epoch = 17, val_mape = 0.11414836942876902
+Epoch: 0018, Train mape_loss: 0.1232, Test MSE-MAE-MAPE: 0.0 - 0.07 - 0.1096
+INFO: save current best model: epoch = 18, val_mape = 0.1096027539284646
+Epoch: 0019, Train mape_loss: 0.1185, Test MSE-MAE-MAPE: 0.0 - 0.07 - 0.1144
+Epoch: 0020, Train mape_loss: 0.1219, Test MSE-MAE-MAPE: 0.0 - 0.07 - 0.1113
+Epoch: 0021, Train mape_loss: 0.1200, Test MSE-MAE-MAPE: 0.0 - 0.08 - 0.1146
+Epoch: 0022, Train mape_loss: 0.1211, Test MSE-MAE-MAPE: 0.0 - 0.07 - 0.1092
+INFO: save current best model: epoch = 22, val_mape = 0.10918893153146114
+Epoch: 0023, Train mape_loss: 0.1184, Test MSE-MAE-MAPE: 0.0 - 0.07 - 0.1085
+INFO: save current best model: epoch = 23, val_mape = 0.10849587072610636
+Epoch: 0024, Train mape_loss: 0.1188, Test MSE-MAE-MAPE: 0.0 - 0.07 - 0.1073
+INFO: save current best model: epoch = 24, val_mape = 0.10732421240780404
+Epoch: 0025, Train mape_loss: 0.1203, Test MSE-MAE-MAPE: 0.0 - 0.07 - 0.1091
+Epoch: 0026, Train mape_loss: 0.1188, Test MSE-MAE-MAPE: 0.0 - 0.08 - 0.1160
+Epoch: 0027, Train mape_loss: 0.1186, Test MSE-MAE-MAPE: 0.0 - 0.07 - 0.1108
+Epoch: 0028, Train mape_loss: 0.1183, Test MSE-MAE-MAPE: 0.0 - 0.07 - 0.1062
+INFO: save current best model: epoch = 28, val_mape = 0.10620656072384485
+Epoch: 0029, Train mape_loss: 0.1154, Test MSE-MAE-MAPE: 0.0 - 0.07 - 0.1123
+Epoch: 0030, Train mape_loss: 0.1174, Test MSE-MAE-MAPE: 0.0 - 0.08 - 0.1136
+Epoch: 0031, Train mape_loss: 0.1168, Test MSE-MAE-MAPE: 0.0 - 0.07 - 0.1066
+Epoch: 0032, Train mape_loss: 0.1152, Test MSE-MAE-MAPE: 0.0 - 0.07 - 0.1106
+Epoch: 0033, Train mape_loss: 0.1155, Test MSE-MAE-MAPE: 0.0 - 0.07 - 0.1061
+INFO: save current best model: epoch = 33, val_mape = 0.10608779451548235
+Epoch: 0034, Train mape_loss: 0.1146, Test MSE-MAE-MAPE: 0.0 - 0.07 - 0.1081
+Epoch: 0035, Train mape_loss: 0.1187, Test MSE-MAE-MAPE: 0.0 - 0.07 - 0.1104
+Epoch: 0036, Train mape_loss: 0.1153, Test MSE-MAE-MAPE: 0.0 - 0.07 - 0.1074
+Epoch: 0037, Train mape_loss: 0.1135, Test MSE-MAE-MAPE: 0.0 - 0.07 - 0.1061
+Epoch: 0038, Train mape_loss: 0.1125, Test MSE-MAE-MAPE: 0.0 - 0.07 - 0.1051
+INFO: save current best model: epoch = 38, val_mape = 0.1051235274230245
+Epoch: 0039, Train mape_loss: 0.1136, Test MSE-MAE-MAPE: 0.0 - 0.07 - 0.1066
+Epoch: 0040, Train mape_loss: 0.1151, Test MSE-MAE-MAPE: 0.0 - 0.07 - 0.1039
+INFO: save current best model: epoch = 40, val_mape = 0.10387361968534317
+Epoch: 0041, Train mape_loss: 0.1127, Test MSE-MAE-MAPE: 0.0 - 0.07 - 0.1036
+INFO: save current best model: epoch = 41, val_mape = 0.10364327221863442
+Epoch: 0042, Train mape_loss: 0.1124, Test MSE-MAE-MAPE: 0.0 - 0.07 - 0.1040
+Epoch: 0043, Train mape_loss: 0.1143, Test MSE-MAE-MAPE: 0.0 - 0.07 - 0.1064
+Epoch: 0044, Train mape_loss: 0.1177, Test MSE-MAE-MAPE: 0.0 - 0.08 - 0.1156
+Epoch: 0045, Train mape_loss: 0.1169, Test MSE-MAE-MAPE: 0.0 - 0.07 - 0.1092
+Epoch: 0046, Train mape_loss: 0.1157, Test MSE-MAE-MAPE: 0.0 - 0.07 - 0.1110
+Epoch: 0047, Train mape_loss: 0.1171, Test MSE-MAE-MAPE: 0.0 - 0.08 - 0.1143
+Epoch: 0048, Train mape_loss: 0.1151, Test MSE-MAE-MAPE: 0.0 - 0.07 - 0.1056
+Epoch: 0049, Train mape_loss: 0.1123, Test MSE-MAE-MAPE: 0.0 - 0.07 - 0.1063
+Epoch: 0050, Train mape_loss: 0.1123, Test MSE-MAE-MAPE: 0.0 - 0.07 - 0.1045
+Epoch: 0051, Train mape_loss: 0.1110, Test MSE-MAE-MAPE: 0.0 - 0.07 - 0.1076
+Epoch: 0052, Train mape_loss: 0.1149, Test MSE-MAE-MAPE: 0.0 - 0.07 - 0.1087
+Epoch: 0053, Train mape_loss: 0.1141, Test MSE-MAE-MAPE: 0.0 - 0.07 - 0.1023
+INFO: save current best model: epoch = 53, val_mape = 0.10234408163740781
+Epoch: 0054, Train mape_loss: 0.1125, Test MSE-MAE-MAPE: 0.0 - 0.07 - 0.1141
+Epoch: 0055, Train mape_loss: 0.1186, Test MSE-MAE-MAPE: 0.0 - 0.07 - 0.1103
+Epoch: 0056, Train mape_loss: 0.1150, Test MSE-MAE-MAPE: 0.0 - 0.09 - 0.1417
+Epoch: 0057, Train mape_loss: 0.1131, Test MSE-MAE-MAPE: 0.0 - 0.07 - 0.1130
+Epoch: 0058, Train mape_loss: 0.1189, Test MSE-MAE-MAPE: 0.0 - 0.07 - 0.1067
+Epoch: 0059, Train mape_loss: 0.1144, Test MSE-MAE-MAPE: 0.0 - 0.07 - 0.1073
+Epoch: 0060, Train mape_loss: 0.1181, Test MSE-MAE-MAPE: 0.0 - 0.08 - 0.1173
+Epoch: 0061, Train mape_loss: 0.1152, Test MSE-MAE-MAPE: 0.0 - 0.08 - 0.1185
+Epoch: 0062, Train mape_loss: 0.1130, Test MSE-MAE-MAPE: 0.0 - 0.07 - 0.1020
+INFO: save current best model: epoch = 62, val_mape = 0.10199109218803329
+Epoch: 0063, Train mape_loss: 0.1131, Test MSE-MAE-MAPE: 0.0 - 0.07 - 0.1069
+Epoch: 0064, Train mape_loss: 0.1126, Test MSE-MAE-MAPE: 0.0 - 0.07 - 0.1083
+Epoch: 0065, Train mape_loss: 0.1128, Test MSE-MAE-MAPE: 0.0 - 0.07 - 0.1056
+Epoch: 0066, Train mape_loss: 0.1136, Test MSE-MAE-MAPE: 0.0 - 0.07 - 0.1075
+Epoch: 0067, Train mape_loss: 0.1132, Test MSE-MAE-MAPE: 0.0 - 0.07 - 0.1107
+Epoch: 0068, Train mape_loss: 0.1132, Test MSE-MAE-MAPE: 0.0 - 0.08 - 0.1157
+Epoch: 0069, Train mape_loss: 0.1210, Test MSE-MAE-MAPE: 0.0 - 0.07 - 0.1084
+Epoch: 0070, Train mape_loss: 0.1171, Test MSE-MAE-MAPE: 0.0 - 0.07 - 0.1013
+INFO: save current best model: epoch = 70, val_mape = 0.10134963621704925
+Epoch: 0071, Train mape_loss: 0.1168, Test MSE-MAE-MAPE: 0.0 - 0.08 - 0.1169
+Epoch: 0072, Train mape_loss: 0.1136, Test MSE-MAE-MAPE: 0.0 - 0.07 - 0.1044
+Epoch: 0073, Train mape_loss: 0.1112, Test MSE-MAE-MAPE: 0.0 - 0.07 - 0.1012
+INFO: save current best model: epoch = 73, val_mape = 0.10115274157092206
+Epoch: 0074, Train mape_loss: 0.1157, Test MSE-MAE-MAPE: 0.0 - 0.08 - 0.1140
+Epoch: 0075, Train mape_loss: 0.1134, Test MSE-MAE-MAPE: 0.0 - 0.07 - 0.1016
+Epoch: 0076, Train mape_loss: 0.1126, Test MSE-MAE-MAPE: 0.0 - 0.07 - 0.1014
+Epoch: 0077, Train mape_loss: 0.1138, Test MSE-MAE-MAPE: 0.0 - 0.07 - 0.1059
+Epoch: 0078, Train mape_loss: 0.1132, Test MSE-MAE-MAPE: 0.0 - 0.07 - 0.1026
+Epoch: 0079, Train mape_loss: 0.1149, Test MSE-MAE-MAPE: 0.0 - 0.07 - 0.1023
+Epoch: 0080, Train mape_loss: 0.1133, Test MSE-MAE-MAPE: 0.0 - 0.08 - 0.1124
+Epoch: 0081, Train mape_loss: 0.1128, Test MSE-MAE-MAPE: 0.1 - 0.08 - 0.1090
+Epoch: 0082, Train mape_loss: 0.1123, Test MSE-MAE-MAPE: 0.0 - 0.07 - 0.1077
+Epoch: 0083, Train mape_loss: 0.1193, Test MSE-MAE-MAPE: 0.0 - 0.07 - 0.1026
+Epoch: 0084, Train mape_loss: 0.1160, Test MSE-MAE-MAPE: 0.0 - 0.07 - 0.1106
+Epoch: 0085, Train mape_loss: 0.1119, Test MSE-MAE-MAPE: 0.0 - 0.07 - 0.1026
+Epoch: 0086, Train mape_loss: 0.1131, Test MSE-MAE-MAPE: 0.0 - 0.07 - 0.1063
+Epoch: 0087, Train mape_loss: 0.1158, Test MSE-MAE-MAPE: 0.0 - 0.07 - 0.1028
+Epoch: 0088, Train mape_loss: 0.1154, Test MSE-MAE-MAPE: 0.0 - 0.07 - 0.1059
+Epoch: 0089, Train mape_loss: 0.1146, Test MSE-MAE-MAPE: 0.0 - 0.07 - 0.1015
+Epoch: 0090, Train mape_loss: 0.1132, Test MSE-MAE-MAPE: 0.0 - 0.07 - 0.1086
+Epoch: 0091, Train mape_loss: 0.1109, Test MSE-MAE-MAPE: 0.0 - 0.08 - 0.1149
+Epoch: 0092, Train mape_loss: 0.1129, Test MSE-MAE-MAPE: 0.0 - 0.07 - 0.1064
+Epoch: 0093, Train mape_loss: 0.1130, Test MSE-MAE-MAPE: 0.0 - 0.07 - 0.1088
+Epoch: 0094, Train mape_loss: 0.1128, Test MSE-MAE-MAPE: 0.0 - 0.07 - 0.1015
+Epoch: 0095, Train mape_loss: 0.1139, Test MSE-MAE-MAPE: 0.0 - 0.08 - 0.1079
+Epoch: 0096, Train mape_loss: 0.1102, Test MSE-MAE-MAPE: 0.0 - 0.07 - 0.1075
+Epoch: 0097, Train mape_loss: 0.1120, Test MSE-MAE-MAPE: 0.0 - 0.07 - 0.1011
+INFO: save current best model: epoch = 97, val_mape = 0.10111995211786233
+Epoch: 0098, Train mape_loss: 0.1122, Test MSE-MAE-MAPE: 0.0 - 0.07 - 0.1022
+Epoch: 0099, Train mape_loss: 0.1177, Test MSE-MAE-MAPE: 0.0 - 0.07 - 0.1137
+Epoch: 0100, Train mape_loss: 0.1128, Test MSE-MAE-MAPE: 0.0 - 0.07 - 0.1029
+Epoch: 0101, Train mape_loss: 0.1173, Test MSE-MAE-MAPE: 0.0 - 0.07 - 0.1026
+Epoch: 0102, Train mape_loss: 0.1117, Test MSE-MAE-MAPE: 0.0 - 0.07 - 0.1005
+INFO: save current best model: epoch = 102, val_mape = 0.10047996325004242
+Epoch: 0103, Train mape_loss: 0.1115, Test MSE-MAE-MAPE: 0.0 - 0.07 - 0.1015
+Epoch: 0104, Train mape_loss: 0.1149, Test MSE-MAE-MAPE: 0.0 - 0.07 - 0.1038
+Epoch: 0105, Train mape_loss: 0.1118, Test MSE-MAE-MAPE: 0.0 - 0.07 - 0.1034
+Epoch: 0106, Train mape_loss: 0.1117, Test MSE-MAE-MAPE: 0.0 - 0.07 - 0.1011
+Epoch: 0107, Train mape_loss: 0.1094, Test MSE-MAE-MAPE: 0.0 - 0.07 - 0.0997
+INFO: save current best model: epoch = 107, val_mape = 0.09973188550343562
+Epoch: 0108, Train mape_loss: 0.1090, Test MSE-MAE-MAPE: 0.0 - 0.07 - 0.1032
+Epoch: 0109, Train mape_loss: 0.1111, Test MSE-MAE-MAPE: 0.0 - 0.07 - 0.1029
+Epoch: 0110, Train mape_loss: 0.1222, Test MSE-MAE-MAPE: 0.0 - 0.08 - 0.1113
+Epoch: 0111, Train mape_loss: 0.1179, Test MSE-MAE-MAPE: 0.0 - 0.08 - 0.1163
+Epoch: 0112, Train mape_loss: 0.1178, Test MSE-MAE-MAPE: 0.0 - 0.08 - 0.1166
+Epoch: 0113, Train mape_loss: 0.1161, Test MSE-MAE-MAPE: 0.0 - 0.07 - 0.1049
+Epoch: 0114, Train mape_loss: 0.1158, Test MSE-MAE-MAPE: 0.0 - 0.07 - 0.1039
+Epoch: 0115, Train mape_loss: 0.1170, Test MSE-MAE-MAPE: 0.0 - 0.07 - 0.1073
+Epoch: 0116, Train mape_loss: 0.1157, Test MSE-MAE-MAPE: 0.0 - 0.07 - 0.1075
+Epoch: 0117, Train mape_loss: 0.1171, Test MSE-MAE-MAPE: 0.0 - 0.08 - 0.1237
+Epoch: 0118, Train mape_loss: 0.1130, Test MSE-MAE-MAPE: 0.0 - 0.07 - 0.0993
+INFO: save current best model: epoch = 118, val_mape = 0.0992609085779286
+Epoch: 0119, Train mape_loss: 0.1126, Test MSE-MAE-MAPE: 0.0 - 0.07 - 0.1001
+Epoch: 0120, Train mape_loss: 0.1145, Test MSE-MAE-MAPE: 0.0 - 0.08 - 0.1176
+Epoch: 0121, Train mape_loss: 0.1126, Test MSE-MAE-MAPE: 0.0 - 0.07 - 0.1015
+Epoch: 0122, Train mape_loss: 0.1131, Test MSE-MAE-MAPE: 0.0 - 0.07 - 0.1063
+Epoch: 0123, Train mape_loss: 0.1133, Test MSE-MAE-MAPE: 0.0 - 0.07 - 0.1042
+Epoch: 0124, Train mape_loss: 0.1110, Test MSE-MAE-MAPE: 0.0 - 0.07 - 0.1043
+Epoch: 0125, Train mape_loss: 0.1131, Test MSE-MAE-MAPE: 0.0 - 0.07 - 0.0999
+Epoch: 0126, Train mape_loss: 0.1102, Test MSE-MAE-MAPE: 0.0 - 0.07 - 0.0973
+INFO: save current best model: epoch = 126, val_mape = 0.0973371476180381
+Epoch: 0127, Train mape_loss: 0.1114, Test MSE-MAE-MAPE: 0.0 - 0.07 - 0.0996
+Epoch: 0128, Train mape_loss: 0.1096, Test MSE-MAE-MAPE: 0.0 - 0.07 - 0.0999
+Epoch: 0129, Train mape_loss: 0.1165, Test MSE-MAE-MAPE: 0.0 - 0.07 - 0.1079
+Epoch: 0130, Train mape_loss: 0.1140, Test MSE-MAE-MAPE: 0.0 - 0.07 - 0.1035
+Epoch: 0131, Train mape_loss: 0.1139, Test MSE-MAE-MAPE: 0.0 - 0.07 - 0.1082
+Epoch: 0132, Train mape_loss: 0.1118, Test MSE-MAE-MAPE: 0.0 - 0.07 - 0.1077
+Epoch: 0133, Train mape_loss: 0.1124, Test MSE-MAE-MAPE: 0.0 - 0.07 - 0.1004
+Epoch: 0134, Train mape_loss: 0.1179, Test MSE-MAE-MAPE: 0.0 - 0.07 - 0.1028
+Epoch: 0135, Train mape_loss: 0.1107, Test MSE-MAE-MAPE: 0.1 - 0.09 - 0.1219
+Epoch: 0136, Train mape_loss: 0.1114, Test MSE-MAE-MAPE: 0.0 - 0.07 - 0.1025
+Epoch: 0137, Train mape_loss: 0.1118, Test MSE-MAE-MAPE: 0.0 - 0.07 - 0.0967
+INFO: save current best model: epoch = 137, val_mape = 0.09673008827146651
+Epoch: 0138, Train mape_loss: 0.1079, Test MSE-MAE-MAPE: 0.0 - 0.07 - 0.1012
+Epoch: 0139, Train mape_loss: 0.1097, Test MSE-MAE-MAPE: 0.1 - 0.08 - 0.1189
+Epoch: 0140, Train mape_loss: 0.1103, Test MSE-MAE-MAPE: 0.0 - 0.07 - 0.1013
+Epoch: 0141, Train mape_loss: 0.1098, Test MSE-MAE-MAPE: 0.0 - 0.07 - 0.0977
+Epoch: 0142, Train mape_loss: 0.1096, Test MSE-MAE-MAPE: 0.0 - 0.06 - 0.0955
+INFO: save current best model: epoch = 142, val_mape = 0.0954892677881253
+Epoch: 0143, Train mape_loss: 0.1096, Test MSE-MAE-MAPE: 0.0 - 0.07 - 0.1044
+Epoch: 0144, Train mape_loss: 0.1088, Test MSE-MAE-MAPE: 0.0 - 0.07 - 0.0980
+Epoch: 0145, Train mape_loss: 0.1118, Test MSE-MAE-MAPE: 0.0 - 0.07 - 0.1009
+Epoch: 0146, Train mape_loss: 0.1070, Test MSE-MAE-MAPE: 0.0 - 0.07 - 0.0944
+INFO: save current best model: epoch = 146, val_mape = 0.09436637441280885
+Epoch: 0147, Train mape_loss: 0.1179, Test MSE-MAE-MAPE: 0.0 - 0.07 - 0.1018
+Epoch: 0148, Train mape_loss: 0.1092, Test MSE-MAE-MAPE: 0.0 - 0.07 - 0.1011
+Epoch: 0149, Train mape_loss: 0.1107, Test MSE-MAE-MAPE: 0.0 - 0.07 - 0.1051
+Epoch: 0150, Train mape_loss: 0.1163, Test MSE-MAE-MAPE: 0.0 - 0.08 - 0.1125
+Epoch: 0151, Train mape_loss: 0.1123, Test MSE-MAE-MAPE: 0.0 - 0.07 - 0.0966
+Epoch: 0152, Train mape_loss: 0.1081, Test MSE-MAE-MAPE: 0.0 - 0.07 - 0.0981
+Epoch: 0153, Train mape_loss: 0.1092, Test MSE-MAE-MAPE: 0.0 - 0.07 - 0.0939
+INFO: save current best model: epoch = 153, val_mape = 0.0939050941486917
+Epoch: 0154, Train mape_loss: 0.1095, Test MSE-MAE-MAPE: 0.0 - 0.06 - 0.0957
+Epoch: 0155, Train mape_loss: 0.1062, Test MSE-MAE-MAPE: 0.0 - 0.07 - 0.0965
+Epoch: 0156, Train mape_loss: 0.1075, Test MSE-MAE-MAPE: 0.0 - 0.07 - 0.0952
+Epoch: 0157, Train mape_loss: 0.1107, Test MSE-MAE-MAPE: 0.0 - 0.07 - 0.0981
+Epoch: 0158, Train mape_loss: 0.1098, Test MSE-MAE-MAPE: 0.0 - 0.08 - 0.1226
+Epoch: 0159, Train mape_loss: 0.1075, Test MSE-MAE-MAPE: 0.0 - 0.06 - 0.0936
+INFO: save current best model: epoch = 159, val_mape = 0.09356617532186517
+Epoch: 0160, Train mape_loss: 0.1068, Test MSE-MAE-MAPE: 0.0 - 0.06 - 0.0924
+INFO: save current best model: epoch = 160, val_mape = 0.09243846275014607
+Epoch: 0161, Train mape_loss: 0.1074, Test MSE-MAE-MAPE: 0.0 - 0.07 - 0.0975
+Epoch: 0162, Train mape_loss: 0.1055, Test MSE-MAE-MAPE: 0.0 - 0.07 - 0.0936
+Epoch: 0163, Train mape_loss: 0.1040, Test MSE-MAE-MAPE: 0.0 - 0.07 - 0.0916
+INFO: save current best model: epoch = 163, val_mape = 0.0915782669761916
+Epoch: 0164, Train mape_loss: 0.1094, Test MSE-MAE-MAPE: 0.0 - 0.07 - 0.0984
+Epoch: 0165, Train mape_loss: 0.1087, Test MSE-MAE-MAPE: 0.0 - 0.07 - 0.0975
+Epoch: 0166, Train mape_loss: 0.1056, Test MSE-MAE-MAPE: 0.0 - 0.06 - 0.0922
+Epoch: 0167, Train mape_loss: 0.1045, Test MSE-MAE-MAPE: 0.0 - 0.06 - 0.0900
+INFO: save current best model: epoch = 167, val_mape = 0.08998742366971385
+Epoch: 0168, Train mape_loss: 0.1035, Test MSE-MAE-MAPE: 0.0 - 0.06 - 0.0939
+Epoch: 0169, Train mape_loss: 0.1074, Test MSE-MAE-MAPE: 0.0 - 0.06 - 0.0934
+Epoch: 0170, Train mape_loss: 0.1048, Test MSE-MAE-MAPE: 0.0 - 0.07 - 0.0980
+Epoch: 0171, Train mape_loss: 0.1055, Test MSE-MAE-MAPE: 0.0 - 0.07 - 0.0950
+Epoch: 0172, Train mape_loss: 0.1048, Test MSE-MAE-MAPE: 0.0 - 0.06 - 0.0908
+Epoch: 0173, Train mape_loss: 0.1048, Test MSE-MAE-MAPE: 0.0 - 0.07 - 0.0944
+Epoch: 0174, Train mape_loss: 0.1030, Test MSE-MAE-MAPE: 0.0 - 0.07 - 0.0928
+Epoch: 0175, Train mape_loss: 0.1032, Test MSE-MAE-MAPE: 0.0 - 0.06 - 0.0900
+INFO: save current best model: epoch = 175, val_mape = 0.0899608210206359
+Epoch: 0176, Train mape_loss: 0.1034, Test MSE-MAE-MAPE: 0.0 - 0.07 - 0.0944
+Epoch: 0177, Train mape_loss: 0.1069, Test MSE-MAE-MAPE: 0.0 - 0.07 - 0.0922
+Epoch: 0178, Train mape_loss: 0.1068, Test MSE-MAE-MAPE: 0.0 - 0.07 - 0.0919
+Epoch: 0179, Train mape_loss: 0.1049, Test MSE-MAE-MAPE: 0.0 - 0.07 - 0.1018
+Epoch: 0180, Train mape_loss: 0.1064, Test MSE-MAE-MAPE: 0.0 - 0.07 - 0.1000
+Epoch: 0181, Train mape_loss: 0.1035, Test MSE-MAE-MAPE: 0.0 - 0.06 - 0.0929
+Epoch: 0182, Train mape_loss: 0.1048, Test MSE-MAE-MAPE: 0.0 - 0.06 - 0.0903
+Epoch: 0183, Train mape_loss: 0.1041, Test MSE-MAE-MAPE: 0.0 - 0.06 - 0.0888
+INFO: save current best model: epoch = 183, val_mape = 0.08883620658165145
+Epoch: 0184, Train mape_loss: 0.1038, Test MSE-MAE-MAPE: 0.0 - 0.06 - 0.0880
+INFO: save current best model: epoch = 184, val_mape = 0.08802903761911697
+Epoch: 0185, Train mape_loss: 0.1017, Test MSE-MAE-MAPE: 0.0 - 0.06 - 0.0917
+Epoch: 0186, Train mape_loss: 0.1045, Test MSE-MAE-MAPE: 0.0 - 0.08 - 0.1063
+Epoch: 0187, Train mape_loss: 0.1048, Test MSE-MAE-MAPE: 0.0 - 0.06 - 0.0902
+Epoch: 0188, Train mape_loss: 0.1030, Test MSE-MAE-MAPE: 0.0 - 0.07 - 0.0898
+Epoch: 0189, Train mape_loss: 0.1068, Test MSE-MAE-MAPE: 0.0 - 0.06 - 0.0899
+Epoch: 0190, Train mape_loss: 0.1042, Test MSE-MAE-MAPE: 0.0 - 0.06 - 0.0965
+Epoch: 0191, Train mape_loss: 0.1059, Test MSE-MAE-MAPE: 0.0 - 0.06 - 0.0902
+Epoch: 0192, Train mape_loss: 0.1034, Test MSE-MAE-MAPE: 0.0 - 0.07 - 0.1024
+Epoch: 0193, Train mape_loss: 0.1053, Test MSE-MAE-MAPE: 0.0 - 0.06 - 0.0946
+Epoch: 0194, Train mape_loss: 0.1053, Test MSE-MAE-MAPE: 0.0 - 0.07 - 0.1058
+Epoch: 0195, Train mape_loss: 0.1022, Test MSE-MAE-MAPE: 0.0 - 0.06 - 0.0902
+Epoch: 0196, Train mape_loss: 0.1033, Test MSE-MAE-MAPE: 0.0 - 0.06 - 0.0910
+Epoch: 0197, Train mape_loss: 0.1018, Test MSE-MAE-MAPE: 0.0 - 0.07 - 0.1014
+Epoch: 0198, Train mape_loss: 0.1037, Test MSE-MAE-MAPE: 0.0 - 0.07 - 0.0916
+Epoch: 0199, Train mape_loss: 0.1010, Test MSE-MAE-MAPE: 0.0 - 0.07 - 0.0970
+Epoch: 0200, Train mape_loss: 0.1022, Test MSE-MAE-MAPE: 0.0 - 0.06 - 0.0912
+Epoch: 0201, Train mape_loss: 0.1019, Test MSE-MAE-MAPE: 0.0 - 0.06 - 0.0907
+Epoch: 0202, Train mape_loss: 0.1038, Test MSE-MAE-MAPE: 0.0 - 0.06 - 0.0927
+Epoch: 0203, Train mape_loss: 0.1022, Test MSE-MAE-MAPE: 0.0 - 0.07 - 0.0942
+Epoch: 0204, Train mape_loss: 0.1026, Test MSE-MAE-MAPE: 0.0 - 0.07 - 0.0963
+Epoch: 0205, Train mape_loss: 0.1021, Test MSE-MAE-MAPE: 0.0 - 0.07 - 0.0925
+Epoch: 0206, Train mape_loss: 0.1019, Test MSE-MAE-MAPE: 0.0 - 0.07 - 0.0960
+Epoch: 0207, Train mape_loss: 0.1015, Test MSE-MAE-MAPE: 0.0 - 0.06 - 0.0899
+Epoch: 0208, Train mape_loss: 0.1047, Test MSE-MAE-MAPE: 0.0 - 0.07 - 0.0950
+Epoch: 0209, Train mape_loss: 0.1031, Test MSE-MAE-MAPE: 0.0 - 0.07 - 0.0951
+Epoch: 0210, Train mape_loss: 0.1017, Test MSE-MAE-MAPE: 0.0 - 0.06 - 0.0933
+Epoch: 0211, Train mape_loss: 0.1036, Test MSE-MAE-MAPE: 0.0 - 0.07 - 0.1052
+Epoch: 0212, Train mape_loss: 0.1002, Test MSE-MAE-MAPE: 0.0 - 0.07 - 0.0954
+Epoch: 0213, Train mape_loss: 0.1023, Test MSE-MAE-MAPE: 0.0 - 0.06 - 0.0890
+Epoch: 0214, Train mape_loss: 0.1029, Test MSE-MAE-MAPE: 0.0 - 0.06 - 0.0899
+Epoch: 0215, Train mape_loss: 0.1078, Test MSE-MAE-MAPE: 0.0 - 0.07 - 0.0942
+Epoch: 0216, Train mape_loss: 0.1026, Test MSE-MAE-MAPE: 0.0 - 0.06 - 0.0880
+INFO: save current best model: epoch = 216, val_mape = 0.08797147531958752
+Epoch: 0217, Train mape_loss: 0.1028, Test MSE-MAE-MAPE: 0.0 - 0.06 - 0.0910
+Epoch: 0218, Train mape_loss: 0.1052, Test MSE-MAE-MAPE: 0.0 - 0.07 - 0.0936
+Epoch: 0219, Train mape_loss: 0.1031, Test MSE-MAE-MAPE: 0.0 - 0.07 - 0.1031
+Epoch: 0220, Train mape_loss: 0.1000, Test MSE-MAE-MAPE: 0.0 - 0.06 - 0.0894
+Epoch: 0221, Train mape_loss: 0.1046, Test MSE-MAE-MAPE: 0.0 - 0.07 - 0.0975
+Epoch: 0222, Train mape_loss: 0.1065, Test MSE-MAE-MAPE: 0.0 - 0.06 - 0.0917
+Epoch: 0223, Train mape_loss: 0.1026, Test MSE-MAE-MAPE: 0.0 - 0.07 - 0.0924
+Epoch: 0224, Train mape_loss: 0.1002, Test MSE-MAE-MAPE: 0.0 - 0.06 - 0.0883
+Epoch: 0225, Train mape_loss: 0.1028, Test MSE-MAE-MAPE: 0.0 - 0.06 - 0.0886
+Epoch: 0226, Train mape_loss: 0.1015, Test MSE-MAE-MAPE: 0.0 - 0.06 - 0.0873
+INFO: save current best model: epoch = 226, val_mape = 0.08733902504873843
+Epoch: 0227, Train mape_loss: 0.1024, Test MSE-MAE-MAPE: 0.0 - 0.07 - 0.0960
+Epoch: 0228, Train mape_loss: 0.1018, Test MSE-MAE-MAPE: 0.0 - 0.07 - 0.0972
+Epoch: 0229, Train mape_loss: 0.1007, Test MSE-MAE-MAPE: 0.0 - 0.06 - 0.0861
+INFO: save current best model: epoch = 229, val_mape = 0.08610739881361938
+Epoch: 0230, Train mape_loss: 0.1014, Test MSE-MAE-MAPE: 0.0 - 0.08 - 0.1049
+Epoch: 0231, Train mape_loss: 0.1014, Test MSE-MAE-MAPE: 0.0 - 0.07 - 0.0970
+Epoch: 0232, Train mape_loss: 0.0994, Test MSE-MAE-MAPE: 0.0 - 0.07 - 0.0995
+Epoch: 0233, Train mape_loss: 0.1002, Test MSE-MAE-MAPE: 0.0 - 0.06 - 0.0909
+Epoch: 0234, Train mape_loss: 0.1000, Test MSE-MAE-MAPE: 0.0 - 0.07 - 0.0935
+Epoch: 0235, Train mape_loss: 0.0999, Test MSE-MAE-MAPE: 0.0 - 0.06 - 0.0911
+Epoch: 0236, Train mape_loss: 0.1002, Test MSE-MAE-MAPE: 0.0 - 0.06 - 0.0856
+INFO: save current best model: epoch = 236, val_mape = 0.08561982431219786
+Epoch: 0237, Train mape_loss: 0.1025, Test MSE-MAE-MAPE: 0.0 - 0.06 - 0.0883
+Epoch: 0238, Train mape_loss: 0.1008, Test MSE-MAE-MAPE: 0.0 - 0.06 - 0.0914
+Epoch: 0239, Train mape_loss: 0.1008, Test MSE-MAE-MAPE: 0.0 - 0.06 - 0.0895
+Epoch: 0240, Train mape_loss: 0.0991, Test MSE-MAE-MAPE: 0.0 - 0.07 - 0.0933
+Epoch: 0241, Train mape_loss: 0.1007, Test MSE-MAE-MAPE: 0.0 - 0.07 - 0.0905
+Epoch: 0242, Train mape_loss: 0.1012, Test MSE-MAE-MAPE: 0.0 - 0.07 - 0.0918
+Epoch: 0243, Train mape_loss: 0.1009, Test MSE-MAE-MAPE: 0.0 - 0.06 - 0.0902
+Epoch: 0244, Train mape_loss: 0.0995, Test MSE-MAE-MAPE: 0.0 - 0.07 - 0.0917
+Epoch: 0245, Train mape_loss: 0.1009, Test MSE-MAE-MAPE: 0.0 - 0.06 - 0.0948
+Epoch: 0246, Train mape_loss: 0.0991, Test MSE-MAE-MAPE: 0.0 - 0.07 - 0.0993
+Epoch: 0247, Train mape_loss: 0.1023, Test MSE-MAE-MAPE: 0.0 - 0.06 - 0.0894
+Epoch: 0248, Train mape_loss: 0.0978, Test MSE-MAE-MAPE: 0.0 - 0.07 - 0.0953
+Epoch: 0249, Train mape_loss: 0.1008, Test MSE-MAE-MAPE: 0.0 - 0.07 - 0.0972
+Epoch: 0250, Train mape_loss: 0.0993, Test MSE-MAE-MAPE: 0.0 - 0.06 - 0.0870
+Epoch: 0251, Train mape_loss: 0.0983, Test MSE-MAE-MAPE: 0.0 - 0.06 - 0.0867
+Epoch: 0252, Train mape_loss: 0.0997, Test MSE-MAE-MAPE: 0.0 - 0.07 - 0.0923
+Epoch: 0253, Train mape_loss: 0.1002, Test MSE-MAE-MAPE: 0.0 - 0.06 - 0.0932
+Epoch: 0254, Train mape_loss: 0.0978, Test MSE-MAE-MAPE: 0.0 - 0.06 - 0.0897
+Epoch: 0255, Train mape_loss: 0.0982, Test MSE-MAE-MAPE: 0.0 - 0.06 - 0.0887
+Epoch: 0256, Train mape_loss: 0.1007, Test MSE-MAE-MAPE: 0.0 - 0.07 - 0.0922
+Epoch: 0257, Train mape_loss: 0.0997, Test MSE-MAE-MAPE: 0.0 - 0.06 - 0.0866
+Epoch: 0258, Train mape_loss: 0.0989, Test MSE-MAE-MAPE: 0.0 - 0.07 - 0.1053
+Epoch: 0259, Train mape_loss: 0.1009, Test MSE-MAE-MAPE: 0.0 - 0.06 - 0.0893
+Epoch: 0260, Train mape_loss: 0.0986, Test MSE-MAE-MAPE: 0.0 - 0.07 - 0.0980
+Epoch: 0261, Train mape_loss: 0.0986, Test MSE-MAE-MAPE: 0.0 - 0.07 - 0.0925
+Epoch: 0262, Train mape_loss: 0.0986, Test MSE-MAE-MAPE: 0.0 - 0.06 - 0.0896
+Epoch: 0263, Train mape_loss: 0.0968, Test MSE-MAE-MAPE: 0.0 - 0.06 - 0.0850
+INFO: save current best model: epoch = 263, val_mape = 0.08499439053871385
+Epoch: 0264, Train mape_loss: 0.0987, Test MSE-MAE-MAPE: 0.0 - 0.06 - 0.0892
+Epoch: 0265, Train mape_loss: 0.1005, Test MSE-MAE-MAPE: 0.0 - 0.06 - 0.0904
+Epoch: 0266, Train mape_loss: 0.1011, Test MSE-MAE-MAPE: 0.0 - 0.06 - 0.0868
+Epoch: 0267, Train mape_loss: 0.0990, Test MSE-MAE-MAPE: 0.0 - 0.06 - 0.0882
+Epoch: 0268, Train mape_loss: 0.0982, Test MSE-MAE-MAPE: 0.0 - 0.06 - 0.0900
+Epoch: 0269, Train mape_loss: 0.1000, Test MSE-MAE-MAPE: 0.0 - 0.06 - 0.0907
+Epoch: 0270, Train mape_loss: 0.0983, Test MSE-MAE-MAPE: 0.0 - 0.06 - 0.0858
+Epoch: 0271, Train mape_loss: 0.0972, Test MSE-MAE-MAPE: 0.0 - 0.06 - 0.0874
+Epoch: 0272, Train mape_loss: 0.0991, Test MSE-MAE-MAPE: 0.0 - 0.06 - 0.0859
+Epoch: 0273, Train mape_loss: 0.0977, Test MSE-MAE-MAPE: 0.0 - 0.07 - 0.0905
+Epoch: 0274, Train mape_loss: 0.0983, Test MSE-MAE-MAPE: 0.0 - 0.07 - 0.0900
+Epoch: 0275, Train mape_loss: 0.0967, Test MSE-MAE-MAPE: 0.0 - 0.06 - 0.0843
+INFO: save current best model: epoch = 275, val_mape = 0.08425612059189219
+Epoch: 0276, Train mape_loss: 0.0967, Test MSE-MAE-MAPE: 0.0 - 0.07 - 0.0902
+Epoch: 0277, Train mape_loss: 0.0976, Test MSE-MAE-MAPE: 0.0 - 0.07 - 0.0906
+Epoch: 0278, Train mape_loss: 0.0984, Test MSE-MAE-MAPE: 0.0 - 0.06 - 0.0870
+Epoch: 0279, Train mape_loss: 0.0969, Test MSE-MAE-MAPE: 0.0 - 0.06 - 0.0840
+INFO: save current best model: epoch = 279, val_mape = 0.08400915040952397
+Epoch: 0280, Train mape_loss: 0.0979, Test MSE-MAE-MAPE: 0.0 - 0.06 - 0.0870
+Epoch: 0281, Train mape_loss: 0.0994, Test MSE-MAE-MAPE: 0.0 - 0.06 - 0.0895
+Epoch: 0282, Train mape_loss: 0.0985, Test MSE-MAE-MAPE: 0.0 - 0.07 - 0.0933
+Epoch: 0283, Train mape_loss: 0.0959, Test MSE-MAE-MAPE: 0.0 - 0.06 - 0.0906
+Epoch: 0284, Train mape_loss: 0.0956, Test MSE-MAE-MAPE: 0.0 - 0.07 - 0.0943
+Epoch: 0285, Train mape_loss: 0.0965, Test MSE-MAE-MAPE: 0.0 - 0.06 - 0.0846
+Epoch: 0286, Train mape_loss: 0.0946, Test MSE-MAE-MAPE: 0.0 - 0.06 - 0.0900
+Epoch: 0287, Train mape_loss: 0.0969, Test MSE-MAE-MAPE: 0.0 - 0.06 - 0.0879
+Epoch: 0288, Train mape_loss: 0.0955, Test MSE-MAE-MAPE: 0.0 - 0.06 - 0.0831
+INFO: save current best model: epoch = 288, val_mape = 0.08314679842527482
+Epoch: 0289, Train mape_loss: 0.0964, Test MSE-MAE-MAPE: 0.0 - 0.06 - 0.0836
+Epoch: 0290, Train mape_loss: 0.0961, Test MSE-MAE-MAPE: 0.0 - 0.06 - 0.0912
+Epoch: 0291, Train mape_loss: 0.0957, Test MSE-MAE-MAPE: 0.0 - 0.06 - 0.0905
+Epoch: 0292, Train mape_loss: 0.0960, Test MSE-MAE-MAPE: 0.0 - 0.06 - 0.0856
+Epoch: 0293, Train mape_loss: 0.1050, Test MSE-MAE-MAPE: 0.0 - 0.06 - 0.0839
+Epoch: 0294, Train mape_loss: 0.0968, Test MSE-MAE-MAPE: 0.0 - 0.07 - 0.0951
+Epoch: 0295, Train mape_loss: 0.0968, Test MSE-MAE-MAPE: 0.0 - 0.07 - 0.0949
+Epoch: 0296, Train mape_loss: 0.0956, Test MSE-MAE-MAPE: 0.0 - 0.06 - 0.0852
+Epoch: 0297, Train mape_loss: 0.0981, Test MSE-MAE-MAPE: 0.0 - 0.06 - 0.0834
+Epoch: 0298, Train mape_loss: 0.0968, Test MSE-MAE-MAPE: 0.0 - 0.07 - 0.0923
+Epoch: 0299, Train mape_loss: 0.0969, Test MSE-MAE-MAPE: 0.0 - 0.06 - 0.0880
+Epoch: 0300, Train mape_loss: 0.0966, Test MSE-MAE-MAPE: 0.0 - 0.07 - 0.0895
+Epoch: 0301, Train mape_loss: 0.0985, Test MSE-MAE-MAPE: 0.0 - 0.07 - 0.0952
+Epoch: 0302, Train mape_loss: 0.0970, Test MSE-MAE-MAPE: 0.0 - 0.06 - 0.0834
+Epoch: 0303, Train mape_loss: 0.0958, Test MSE-MAE-MAPE: 0.0 - 0.06 - 0.0847
+Epoch: 0304, Train mape_loss: 0.0973, Test MSE-MAE-MAPE: 0.0 - 0.06 - 0.0847
+Epoch: 0305, Train mape_loss: 0.0967, Test MSE-MAE-MAPE: 0.0 - 0.06 - 0.0881
+Epoch: 0306, Train mape_loss: 0.0959, Test MSE-MAE-MAPE: 0.0 - 0.06 - 0.0833
+Epoch: 0307, Train mape_loss: 0.0951, Test MSE-MAE-MAPE: 0.0 - 0.06 - 0.0845
+Epoch: 0308, Train mape_loss: 0.0959, Test MSE-MAE-MAPE: 0.0 - 0.06 - 0.0851
+Epoch: 0309, Train mape_loss: 0.0953, Test MSE-MAE-MAPE: 0.0 - 0.06 - 0.0881
+Epoch: 0310, Train mape_loss: 0.0957, Test MSE-MAE-MAPE: 0.0 - 0.06 - 0.0838
+Epoch: 0311, Train mape_loss: 0.0956, Test MSE-MAE-MAPE: 0.0 - 0.06 - 0.0855
+Epoch: 0312, Train mape_loss: 0.0968, Test MSE-MAE-MAPE: 0.0 - 0.06 - 0.0831
+INFO: save current best model: epoch = 312, val_mape = 0.08313957661090372
+Epoch: 0313, Train mape_loss: 0.0966, Test MSE-MAE-MAPE: 0.0 - 0.06 - 0.0861
+Epoch: 0314, Train mape_loss: 0.0964, Test MSE-MAE-MAPE: 0.0 - 0.06 - 0.0856
+Epoch: 0315, Train mape_loss: 0.0952, Test MSE-MAE-MAPE: 0.0 - 0.06 - 0.0911
+Epoch: 0316, Train mape_loss: 0.0967, Test MSE-MAE-MAPE: 0.0 - 0.06 - 0.0837
+Epoch: 0317, Train mape_loss: 0.0950, Test MSE-MAE-MAPE: 0.0 - 0.06 - 0.0878
+Epoch: 0318, Train mape_loss: 0.0961, Test MSE-MAE-MAPE: 0.0 - 0.06 - 0.0871
+Epoch: 0319, Train mape_loss: 0.0942, Test MSE-MAE-MAPE: 0.0 - 0.07 - 0.0898
+Epoch: 0320, Train mape_loss: 0.0948, Test MSE-MAE-MAPE: 0.0 - 0.06 - 0.0858
+Epoch: 0321, Train mape_loss: 0.0947, Test MSE-MAE-MAPE: 0.0 - 0.06 - 0.0860
+Epoch: 0322, Train mape_loss: 0.0934, Test MSE-MAE-MAPE: 0.0 - 0.06 - 0.0822
+INFO: save current best model: epoch = 322, val_mape = 0.08224422456688109
+Epoch: 0323, Train mape_loss: 0.0942, Test MSE-MAE-MAPE: 0.0 - 0.06 - 0.0814
+INFO: save current best model: epoch = 323, val_mape = 0.08136943939729012
+Epoch: 0324, Train mape_loss: 0.0948, Test MSE-MAE-MAPE: 0.0 - 0.06 - 0.0845
+Epoch: 0325, Train mape_loss: 0.0983, Test MSE-MAE-MAPE: 0.0 - 0.07 - 0.1054
+Epoch: 0326, Train mape_loss: 0.0957, Test MSE-MAE-MAPE: 0.0 - 0.06 - 0.0838
+Epoch: 0327, Train mape_loss: 0.0949, Test MSE-MAE-MAPE: 0.0 - 0.06 - 0.0841
+Epoch: 0328, Train mape_loss: 0.0957, Test MSE-MAE-MAPE: 0.0 - 0.06 - 0.0868
+Epoch: 0329, Train mape_loss: 0.0948, Test MSE-MAE-MAPE: 0.0 - 0.06 - 0.0822
+Epoch: 0330, Train mape_loss: 0.0933, Test MSE-MAE-MAPE: 0.0 - 0.06 - 0.0836
+Epoch: 0331, Train mape_loss: 0.0953, Test MSE-MAE-MAPE: 0.0 - 0.06 - 0.0826
+Epoch: 0332, Train mape_loss: 0.0940, Test MSE-MAE-MAPE: 0.0 - 0.07 - 0.1011
+Epoch: 0333, Train mape_loss: 0.0941, Test MSE-MAE-MAPE: 0.0 - 0.06 - 0.0848
+Epoch: 0334, Train mape_loss: 0.0949, Test MSE-MAE-MAPE: 0.0 - 0.06 - 0.0853
+Epoch: 0335, Train mape_loss: 0.0935, Test MSE-MAE-MAPE: 0.0 - 0.06 - 0.0845
+Epoch: 0336, Train mape_loss: 0.0955, Test MSE-MAE-MAPE: 0.0 - 0.06 - 0.0827
+Epoch: 0337, Train mape_loss: 0.0943, Test MSE-MAE-MAPE: 0.0 - 0.06 - 0.0834
+Epoch: 0338, Train mape_loss: 0.0937, Test MSE-MAE-MAPE: 0.0 - 0.06 - 0.0852
+Epoch: 0339, Train mape_loss: 0.0967, Test MSE-MAE-MAPE: 0.0 - 0.06 - 0.0807
+INFO: save current best model: epoch = 339, val_mape = 0.08065525509846505
+Epoch: 0340, Train mape_loss: 0.0956, Test MSE-MAE-MAPE: 0.0 - 0.06 - 0.0882
+Epoch: 0341, Train mape_loss: 0.0945, Test MSE-MAE-MAPE: 0.0 - 0.07 - 0.0915
+Epoch: 0342, Train mape_loss: 0.0926, Test MSE-MAE-MAPE: 0.0 - 0.06 - 0.0828
+Epoch: 0343, Train mape_loss: 0.0959, Test MSE-MAE-MAPE: 0.0 - 0.06 - 0.0879
+Epoch: 0344, Train mape_loss: 0.0955, Test MSE-MAE-MAPE: 0.0 - 0.07 - 0.0901
+Epoch: 0345, Train mape_loss: 0.0948, Test MSE-MAE-MAPE: 0.0 - 0.06 - 0.0836
+Epoch: 0346, Train mape_loss: 0.0947, Test MSE-MAE-MAPE: 0.0 - 0.06 - 0.0848
+Epoch: 0347, Train mape_loss: 0.0933, Test MSE-MAE-MAPE: 0.0 - 0.06 - 0.0806
+INFO: save current best model: epoch = 347, val_mape = 0.08063937978578727
+Epoch: 0348, Train mape_loss: 0.0927, Test MSE-MAE-MAPE: 0.0 - 0.06 - 0.0825
+Epoch: 0349, Train mape_loss: 0.0938, Test MSE-MAE-MAPE: 0.0 - 0.07 - 0.0908
+Epoch: 0350, Train mape_loss: 0.0934, Test MSE-MAE-MAPE: 0.0 - 0.06 - 0.0794
+INFO: save current best model: epoch = 350, val_mape = 0.07942104989906461
+Epoch: 0351, Train mape_loss: 0.0935, Test MSE-MAE-MAPE: 0.0 - 0.06 - 0.0876
+Epoch: 0352, Train mape_loss: 0.0934, Test MSE-MAE-MAPE: 0.0 - 0.06 - 0.0847
+Epoch: 0353, Train mape_loss: 0.0927, Test MSE-MAE-MAPE: 0.0 - 0.06 - 0.0809
+Epoch: 0354, Train mape_loss: 0.0934, Test MSE-MAE-MAPE: 0.0 - 0.06 - 0.0882
+Epoch: 0355, Train mape_loss: 0.0912, Test MSE-MAE-MAPE: 0.0 - 0.06 - 0.0855
+Epoch: 0356, Train mape_loss: 0.0928, Test MSE-MAE-MAPE: 0.0 - 0.06 - 0.0852
+Epoch: 0357, Train mape_loss: 0.0914, Test MSE-MAE-MAPE: 0.0 - 0.06 - 0.0825
+Epoch: 0358, Train mape_loss: 0.0924, Test MSE-MAE-MAPE: 0.0 - 0.06 - 0.0856
+Epoch: 0359, Train mape_loss: 0.0933, Test MSE-MAE-MAPE: 0.0 - 0.06 - 0.0856
+Epoch: 0360, Train mape_loss: 0.0913, Test MSE-MAE-MAPE: 0.0 - 0.06 - 0.0833
+Epoch: 0361, Train mape_loss: 0.0921, Test MSE-MAE-MAPE: 0.0 - 0.06 - 0.0807
+Epoch: 0362, Train mape_loss: 0.0934, Test MSE-MAE-MAPE: 0.0 - 0.06 - 0.0831
+Epoch: 0363, Train mape_loss: 0.0921, Test MSE-MAE-MAPE: 0.0 - 0.06 - 0.0857
+Epoch: 0364, Train mape_loss: 0.0918, Test MSE-MAE-MAPE: 0.0 - 0.06 - 0.0806
+Epoch: 0365, Train mape_loss: 0.0907, Test MSE-MAE-MAPE: 0.0 - 0.06 - 0.0823
+Epoch: 0366, Train mape_loss: 0.0898, Test MSE-MAE-MAPE: 0.0 - 0.06 - 0.0796
+Epoch: 0367, Train mape_loss: 0.0922, Test MSE-MAE-MAPE: 0.0 - 0.06 - 0.0801
+Epoch: 0368, Train mape_loss: 0.0907, Test MSE-MAE-MAPE: 0.0 - 0.06 - 0.0796
+Epoch: 0369, Train mape_loss: 0.0915, Test MSE-MAE-MAPE: 0.0 - 0.06 - 0.0841
+Epoch: 0370, Train mape_loss: 0.0917, Test MSE-MAE-MAPE: 0.0 - 0.06 - 0.0830
+Epoch: 0371, Train mape_loss: 0.0903, Test MSE-MAE-MAPE: 0.0 - 0.07 - 0.0914
+Epoch: 0372, Train mape_loss: 0.0918, Test MSE-MAE-MAPE: 0.0 - 0.07 - 0.0935
+Epoch: 0373, Train mape_loss: 0.0913, Test MSE-MAE-MAPE: 0.0 - 0.06 - 0.0860
+Epoch: 0374, Train mape_loss: 0.0907, Test MSE-MAE-MAPE: 0.0 - 0.06 - 0.0795
+Epoch: 0375, Train mape_loss: 0.0920, Test MSE-MAE-MAPE: 0.0 - 0.06 - 0.0810
+Epoch: 0376, Train mape_loss: 0.0923, Test MSE-MAE-MAPE: 0.0 - 0.06 - 0.0819
+Epoch: 0377, Train mape_loss: 0.0915, Test MSE-MAE-MAPE: 0.0 - 0.06 - 0.0834
+Epoch: 0378, Train mape_loss: 0.0904, Test MSE-MAE-MAPE: 0.0 - 0.06 - 0.0808
+Epoch: 0379, Train mape_loss: 0.0951, Test MSE-MAE-MAPE: 0.0 - 0.06 - 0.0855
+Epoch: 0380, Train mape_loss: 0.0944, Test MSE-MAE-MAPE: 0.0 - 0.06 - 0.0850
+Epoch: 0381, Train mape_loss: 0.0908, Test MSE-MAE-MAPE: 0.0 - 0.06 - 0.0806
+Epoch: 0382, Train mape_loss: 0.0900, Test MSE-MAE-MAPE: 0.0 - 0.06 - 0.0830
+Epoch: 0383, Train mape_loss: 0.0910, Test MSE-MAE-MAPE: 0.0 - 0.06 - 0.0791
+INFO: save current best model: epoch = 383, val_mape = 0.07910439167563674
+Epoch: 0384, Train mape_loss: 0.0906, Test MSE-MAE-MAPE: 0.0 - 0.06 - 0.0799
+Epoch: 0385, Train mape_loss: 0.0906, Test MSE-MAE-MAPE: 0.0 - 0.06 - 0.0799
+Epoch: 0386, Train mape_loss: 0.0918, Test MSE-MAE-MAPE: 0.0 - 0.06 - 0.0796
+Epoch: 0387, Train mape_loss: 0.0908, Test MSE-MAE-MAPE: 0.0 - 0.06 - 0.0833
+Epoch: 0388, Train mape_loss: 0.0905, Test MSE-MAE-MAPE: 0.0 - 0.06 - 0.0810
+Epoch: 0389, Train mape_loss: 0.0912, Test MSE-MAE-MAPE: 0.0 - 0.06 - 0.0804
+Epoch: 0390, Train mape_loss: 0.0908, Test MSE-MAE-MAPE: 0.0 - 0.06 - 0.0843
+Epoch: 0391, Train mape_loss: 0.0898, Test MSE-MAE-MAPE: 0.0 - 0.06 - 0.0794
+Epoch: 0392, Train mape_loss: 0.0893, Test MSE-MAE-MAPE: 0.0 - 0.06 - 0.0828
+Epoch: 0393, Train mape_loss: 0.0906, Test MSE-MAE-MAPE: 0.0 - 0.06 - 0.0788
+INFO: save current best model: epoch = 393, val_mape = 0.07883475550466575
+Epoch: 0394, Train mape_loss: 0.0913, Test MSE-MAE-MAPE: 0.0 - 0.06 - 0.0850
+Epoch: 0395, Train mape_loss: 0.0903, Test MSE-MAE-MAPE: 0.0 - 0.06 - 0.0787
+INFO: save current best model: epoch = 395, val_mape = 0.07867452290935027
+Epoch: 0396, Train mape_loss: 0.0933, Test MSE-MAE-MAPE: 0.0 - 0.06 - 0.0817
+Epoch: 0397, Train mape_loss: 0.0899, Test MSE-MAE-MAPE: 0.0 - 0.06 - 0.0798
+Epoch: 0398, Train mape_loss: 0.0943, Test MSE-MAE-MAPE: 0.0 - 0.06 - 0.0797
+Epoch: 0399, Train mape_loss: 0.0899, Test MSE-MAE-MAPE: 0.0 - 0.06 - 0.0798
+Epoch: 0400, Train mape_loss: 0.0909, Test MSE-MAE-MAPE: 0.0 - 0.06 - 0.0788
+Epoch: 0401, Train mape_loss: 0.0912, Test MSE-MAE-MAPE: 0.0 - 0.06 - 0.0794
+Epoch: 0402, Train mape_loss: 0.0901, Test MSE-MAE-MAPE: 0.0 - 0.06 - 0.0847
+Epoch: 0403, Train mape_loss: 0.0922, Test MSE-MAE-MAPE: 0.0 - 0.06 - 0.0834
+Epoch: 0404, Train mape_loss: 0.0900, Test MSE-MAE-MAPE: 0.0 - 0.07 - 0.0910
+Epoch: 0405, Train mape_loss: 0.0919, Test MSE-MAE-MAPE: 0.0 - 0.06 - 0.0836
+Epoch: 0406, Train mape_loss: 0.0903, Test MSE-MAE-MAPE: 0.0 - 0.07 - 0.0884
+Epoch: 0407, Train mape_loss: 0.0906, Test MSE-MAE-MAPE: 0.0 - 0.06 - 0.0782
+INFO: save current best model: epoch = 407, val_mape = 0.07818323536030437
+Epoch: 0408, Train mape_loss: 0.0916, Test MSE-MAE-MAPE: 0.0 - 0.06 - 0.0790
+Epoch: 0409, Train mape_loss: 0.0917, Test MSE-MAE-MAPE: 0.0 - 0.06 - 0.0811
+Epoch: 0410, Train mape_loss: 0.0908, Test MSE-MAE-MAPE: 0.0 - 0.06 - 0.0826
+Epoch: 0411, Train mape_loss: 0.0905, Test MSE-MAE-MAPE: 0.0 - 0.06 - 0.0811
+Epoch: 0412, Train mape_loss: 0.0884, Test MSE-MAE-MAPE: 0.0 - 0.06 - 0.0813
+Epoch: 0413, Train mape_loss: 0.0899, Test MSE-MAE-MAPE: 0.0 - 0.06 - 0.0784
+Epoch: 0414, Train mape_loss: 0.0911, Test MSE-MAE-MAPE: 0.0 - 0.06 - 0.0782
+INFO: save current best model: epoch = 414, val_mape = 0.07817491565891503
+Epoch: 0415, Train mape_loss: 0.0909, Test MSE-MAE-MAPE: 0.0 - 0.06 - 0.0798
+Epoch: 0416, Train mape_loss: 0.0898, Test MSE-MAE-MAPE: 0.0 - 0.06 - 0.0793
+Epoch: 0417, Train mape_loss: 0.0927, Test MSE-MAE-MAPE: 0.0 - 0.07 - 0.0915
+Epoch: 0418, Train mape_loss: 0.0889, Test MSE-MAE-MAPE: 0.0 - 0.06 - 0.0783
+Epoch: 0419, Train mape_loss: 0.0899, Test MSE-MAE-MAPE: 0.0 - 0.06 - 0.0813
+Epoch: 0420, Train mape_loss: 0.0894, Test MSE-MAE-MAPE: 0.0 - 0.06 - 0.0800
+Epoch: 0421, Train mape_loss: 0.0894, Test MSE-MAE-MAPE: 0.0 - 0.06 - 0.0829
+Epoch: 0422, Train mape_loss: 0.0876, Test MSE-MAE-MAPE: 0.0 - 0.06 - 0.0877
+Epoch: 0423, Train mape_loss: 0.0907, Test MSE-MAE-MAPE: 0.0 - 0.06 - 0.0827
+Epoch: 0424, Train mape_loss: 0.0890, Test MSE-MAE-MAPE: 0.0 - 0.06 - 0.0864
+Epoch: 0425, Train mape_loss: 0.0890, Test MSE-MAE-MAPE: 0.0 - 0.06 - 0.0811
+Epoch: 0426, Train mape_loss: 0.0881, Test MSE-MAE-MAPE: 0.0 - 0.06 - 0.0828
+Epoch: 0427, Train mape_loss: 0.0909, Test MSE-MAE-MAPE: 0.0 - 0.06 - 0.0787
+Epoch: 0428, Train mape_loss: 0.0906, Test MSE-MAE-MAPE: 0.0 - 0.06 - 0.0828
+Epoch: 0429, Train mape_loss: 0.0887, Test MSE-MAE-MAPE: 0.0 - 0.06 - 0.0798
+Epoch: 0430, Train mape_loss: 0.0887, Test MSE-MAE-MAPE: 0.0 - 0.06 - 0.0795
+Epoch: 0431, Train mape_loss: 0.0891, Test MSE-MAE-MAPE: 0.0 - 0.06 - 0.0780
+INFO: save current best model: epoch = 431, val_mape = 0.07804975169902532
+Epoch: 0432, Train mape_loss: 0.0882, Test MSE-MAE-MAPE: 0.0 - 0.06 - 0.0795
+Epoch: 0433, Train mape_loss: 0.0894, Test MSE-MAE-MAPE: 0.0 - 0.06 - 0.0799
+Epoch: 0434, Train mape_loss: 0.0881, Test MSE-MAE-MAPE: 0.0 - 0.06 - 0.0811
+Epoch: 0435, Train mape_loss: 0.0889, Test MSE-MAE-MAPE: 0.0 - 0.06 - 0.0773
+INFO: save current best model: epoch = 435, val_mape = 0.07731571902622351
+Epoch: 0436, Train mape_loss: 0.0890, Test MSE-MAE-MAPE: 0.0 - 0.06 - 0.0808
+Epoch: 0437, Train mape_loss: 0.0885, Test MSE-MAE-MAPE: 0.0 - 0.06 - 0.0783
+Epoch: 0438, Train mape_loss: 0.0887, Test MSE-MAE-MAPE: 0.0 - 0.06 - 0.0770
+INFO: save current best model: epoch = 438, val_mape = 0.07695868284137339
+Epoch: 0439, Train mape_loss: 0.0894, Test MSE-MAE-MAPE: 0.0 - 0.06 - 0.0866
+Epoch: 0440, Train mape_loss: 0.0911, Test MSE-MAE-MAPE: 0.0 - 0.06 - 0.0816
+Epoch: 0441, Train mape_loss: 0.0876, Test MSE-MAE-MAPE: 0.0 - 0.06 - 0.0839
+Epoch: 0442, Train mape_loss: 0.0892, Test MSE-MAE-MAPE: 0.0 - 0.06 - 0.0806
+Epoch: 0443, Train mape_loss: 0.0876, Test MSE-MAE-MAPE: 0.0 - 0.06 - 0.0839
+Epoch: 0444, Train mape_loss: 0.0882, Test MSE-MAE-MAPE: 0.0 - 0.06 - 0.0856
+Epoch: 0445, Train mape_loss: 0.0895, Test MSE-MAE-MAPE: 0.0 - 0.06 - 0.0804
+Epoch: 0446, Train mape_loss: 0.0888, Test MSE-MAE-MAPE: 0.0 - 0.06 - 0.0854
+Epoch: 0447, Train mape_loss: 0.0886, Test MSE-MAE-MAPE: 0.0 - 0.06 - 0.0803
+Epoch: 0448, Train mape_loss: 0.0883, Test MSE-MAE-MAPE: 0.0 - 0.06 - 0.0837
+Epoch: 0449, Train mape_loss: 0.0906, Test MSE-MAE-MAPE: 0.0 - 0.06 - 0.0816
+Epoch: 0450, Train mape_loss: 0.0885, Test MSE-MAE-MAPE: 0.0 - 0.07 - 0.0907
+Epoch: 0451, Train mape_loss: 0.0882, Test MSE-MAE-MAPE: 0.0 - 0.06 - 0.0804
+Epoch: 0452, Train mape_loss: 0.0885, Test MSE-MAE-MAPE: 0.0 - 0.06 - 0.0863
+Epoch: 0453, Train mape_loss: 0.0875, Test MSE-MAE-MAPE: 0.0 - 0.06 - 0.0768
+INFO: save current best model: epoch = 453, val_mape = 0.0768497219515414
+Epoch: 0454, Train mape_loss: 0.0875, Test MSE-MAE-MAPE: 0.0 - 0.06 - 0.0773
+Epoch: 0455, Train mape_loss: 0.0869, Test MSE-MAE-MAPE: 0.0 - 0.06 - 0.0770
+Epoch: 0456, Train mape_loss: 0.0871, Test MSE-MAE-MAPE: 0.0 - 0.06 - 0.0768
+INFO: save current best model: epoch = 456, val_mape = 0.07678319151152849
+Epoch: 0457, Train mape_loss: 0.0882, Test MSE-MAE-MAPE: 0.0 - 0.06 - 0.0805
+Epoch: 0458, Train mape_loss: 0.0867, Test MSE-MAE-MAPE: 0.0 - 0.06 - 0.0775
+Epoch: 0459, Train mape_loss: 0.0883, Test MSE-MAE-MAPE: 0.0 - 0.06 - 0.0775
+Epoch: 0460, Train mape_loss: 0.0867, Test MSE-MAE-MAPE: 0.0 - 0.06 - 0.0778
+Epoch: 0461, Train mape_loss: 0.0875, Test MSE-MAE-MAPE: 0.0 - 0.06 - 0.0775
+Epoch: 0462, Train mape_loss: 0.0903, Test MSE-MAE-MAPE: 0.0 - 0.06 - 0.0838
+Epoch: 0463, Train mape_loss: 0.0880, Test MSE-MAE-MAPE: 0.0 - 0.06 - 0.0796
+Epoch: 0464, Train mape_loss: 0.0875, Test MSE-MAE-MAPE: 0.0 - 0.06 - 0.0803
+Epoch: 0465, Train mape_loss: 0.0879, Test MSE-MAE-MAPE: 0.0 - 0.06 - 0.0783
+Epoch: 0466, Train mape_loss: 0.0873, Test MSE-MAE-MAPE: 0.0 - 0.06 - 0.0786
+Epoch: 0467, Train mape_loss: 0.0876, Test MSE-MAE-MAPE: 0.0 - 0.06 - 0.0786
+Epoch: 0468, Train mape_loss: 0.0871, Test MSE-MAE-MAPE: 0.0 - 0.06 - 0.0803
+Epoch: 0469, Train mape_loss: 0.0876, Test MSE-MAE-MAPE: 0.0 - 0.06 - 0.0772
+Epoch: 0470, Train mape_loss: 0.0869, Test MSE-MAE-MAPE: 0.0 - 0.06 - 0.0800
+Epoch: 0471, Train mape_loss: 0.0876, Test MSE-MAE-MAPE: 0.0 - 0.06 - 0.0797
+Epoch: 0472, Train mape_loss: 0.0873, Test MSE-MAE-MAPE: 0.0 - 0.06 - 0.0814
+Epoch: 0473, Train mape_loss: 0.0887, Test MSE-MAE-MAPE: 0.0 - 0.06 - 0.0786
+Epoch: 0474, Train mape_loss: 0.0893, Test MSE-MAE-MAPE: 0.0 - 0.06 - 0.0819
+Epoch: 0475, Train mape_loss: 0.0882, Test MSE-MAE-MAPE: 0.0 - 0.06 - 0.0821
+Epoch: 0476, Train mape_loss: 0.0875, Test MSE-MAE-MAPE: 0.0 - 0.06 - 0.0776
+Epoch: 0477, Train mape_loss: 0.0869, Test MSE-MAE-MAPE: 0.0 - 0.06 - 0.0785
+Epoch: 0478, Train mape_loss: 0.0868, Test MSE-MAE-MAPE: 0.0 - 0.07 - 0.0876
+Epoch: 0479, Train mape_loss: 0.0860, Test MSE-MAE-MAPE: 0.0 - 0.06 - 0.0771
+Epoch: 0480, Train mape_loss: 0.0878, Test MSE-MAE-MAPE: 0.0 - 0.06 - 0.0805
+Epoch: 0481, Train mape_loss: 0.0871, Test MSE-MAE-MAPE: 0.0 - 0.06 - 0.0765
+INFO: save current best model: epoch = 481, val_mape = 0.07650785220400085
+Epoch: 0482, Train mape_loss: 0.0875, Test MSE-MAE-MAPE: 0.0 - 0.06 - 0.0809
+Epoch: 0483, Train mape_loss: 0.0867, Test MSE-MAE-MAPE: 0.0 - 0.06 - 0.0779
+Epoch: 0484, Train mape_loss: 0.0862, Test MSE-MAE-MAPE: 0.0 - 0.06 - 0.0783
+Epoch: 0485, Train mape_loss: 0.0878, Test MSE-MAE-MAPE: 0.0 - 0.06 - 0.0769
+Epoch: 0486, Train mape_loss: 0.0899, Test MSE-MAE-MAPE: 0.0 - 0.06 - 0.0799
+Epoch: 0487, Train mape_loss: 0.0878, Test MSE-MAE-MAPE: 0.0 - 0.06 - 0.0795
+Epoch: 0488, Train mape_loss: 0.0874, Test MSE-MAE-MAPE: 0.0 - 0.06 - 0.0801
+Epoch: 0489, Train mape_loss: 0.0872, Test MSE-MAE-MAPE: 0.0 - 0.07 - 0.0854
+Epoch: 0490, Train mape_loss: 0.0893, Test MSE-MAE-MAPE: 0.0 - 0.06 - 0.0830
+Epoch: 0491, Train mape_loss: 0.0872, Test MSE-MAE-MAPE: 0.0 - 0.07 - 0.0911
+Epoch: 0492, Train mape_loss: 0.0888, Test MSE-MAE-MAPE: 0.0 - 0.06 - 0.0789
+Epoch: 0493, Train mape_loss: 0.0877, Test MSE-MAE-MAPE: 0.0 - 0.06 - 0.0777
+Epoch: 0494, Train mape_loss: 0.0886, Test MSE-MAE-MAPE: 0.0 - 0.06 - 0.0860
+Epoch: 0495, Train mape_loss: 0.0939, Test MSE-MAE-MAPE: 0.0 - 0.06 - 0.0814
+Epoch: 0496, Train mape_loss: 0.0897, Test MSE-MAE-MAPE: 0.0 - 0.06 - 0.0835
+Epoch: 0497, Train mape_loss: 0.0880, Test MSE-MAE-MAPE: 0.0 - 0.06 - 0.0778
+Epoch: 0498, Train mape_loss: 0.0869, Test MSE-MAE-MAPE: 0.0 - 0.06 - 0.0764
+INFO: save current best model: epoch = 498, val_mape = 0.0763764714605745
+Epoch: 0499, Train mape_loss: 0.0869, Test MSE-MAE-MAPE: 0.0 - 0.06 - 0.0799
+Epoch: 0500, Train mape_loss: 0.0888, Test MSE-MAE-MAPE: 0.0 - 0.06 - 0.0771

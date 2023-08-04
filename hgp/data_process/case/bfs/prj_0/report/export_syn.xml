@@ -1,0 +1,173 @@
+<profile>
+  <RunData>
+    <RUN_TYPE>synth</RUN_TYPE>
+    <VIVADO_VERSION>v.2022.1</VIVADO_VERSION>
+    <ROOT_MODULE_CELL>bd_0_i/hls_inst</ROOT_MODULE_CELL>
+  </RunData>
+  <TimingReport>
+    <TargetClockPeriod>10.000</TargetClockPeriod>
+    <AchievedClockPeriod>2.991</AchievedClockPeriod>
+    <CLOCK_NAME>ap_clk</CLOCK_NAME>
+    <CP_FINAL>2.991</CP_FINAL>
+    <CP_ROUTE>NA</CP_ROUTE>
+    <CP_SYNTH>2.991</CP_SYNTH>
+    <CP_TARGET>10.000</CP_TARGET>
+    <SLACK_FINAL>7.009</SLACK_FINAL>
+    <SLACK_ROUTE/>
+    <SLACK_SYNTH>7.009</SLACK_SYNTH>
+    <TIMING_MET>TRUE</TIMING_MET>
+    <TNS_FINAL>0.000</TNS_FINAL>
+    <TNS_ROUTE>NA</TNS_ROUTE>
+    <TNS_SYNTH>0.000</TNS_SYNTH>
+    <WNS_FINAL>7.009</WNS_FINAL>
+    <WNS_ROUTE>NA</WNS_ROUTE>
+    <WNS_SYNTH>7.009</WNS_SYNTH>
+  </TimingReport>
+  <AreaReport>
+    <Resources>
+      <BRAM>0</BRAM>
+      <CLB>0</CLB>
+      <DSP>0</DSP>
+      <FF>1033</FF>
+      <LATCH>0</LATCH>
+      <LUT>484</LUT>
+      <SRL>0</SRL>
+      <URAM>0</URAM>
+    </Resources>
+    <AvailableResources>
+      <BRAM>2060</BRAM>
+      <CLB>0</CLB>
+      <DSP>2800</DSP>
+      <FF>607200</FF>
+      <LUT>303600</LUT>
+      <URAM>0</URAM>
+    </AvailableResources>
+  </AreaReport>
+  <RtlModules>
+    <RtlModule CELL="inst" DEPTH="0" IS_TOP="1" TYPE="function" MODULENAME="bfs" DISPNAME="inst" RTLNAME="bfs">
+      <SubModules count="1">grp_bfs_Pipeline_loop_neighbors_fu_206</SubModules>
+      <Resources FF="1033" LUT="484"/>
+      <LocalResources FF="620" LUT="290"/>
+    </RtlModule>
+    <RtlModule CELL="inst/grp_bfs_Pipeline_loop_neighbors_fu_206" DEPTH="1" TYPE="function" MODULENAME="bfs_Pipeline_loop_neighbors" DISPNAME="grp_bfs_Pipeline_loop_neighbors_fu_206" RTLNAME="bfs_bfs_Pipeline_loop_neighbors">
+      <Resources FF="413" LUT="194"/>
+    </RtlModule>
+  </RtlModules>
+  <TimingPaths>
+    <TPATH DATAPATH_DELAY="2.986" DATAPATH_LOGIC_DELAY="1.907" DATAPATH_NET_DELAY="1.079" ENDPOINT_PIN="grp_bfs_Pipeline_loop_neighbors_fu_206/icmp_ln28_1_reg_397_reg[0]/D" LOGIC_LEVELS="19" MAX_FANOUT="4" SLACK="7.009" STARTPOINT_PIN="grp_bfs_Pipeline_loop_neighbors_fu_206/e_1_0_fu_64_reg[4]/C">
+      <CELL NAME="grp_bfs_Pipeline_loop_neighbors_fu_206/e_1_0_fu_64_reg[4]" PRIMITIVE_TYPE="FLOP_LATCH.flop.FDRE" LINE_NUMBER="278"/>
+      <CELL NAME="grp_bfs_Pipeline_loop_neighbors_fu_206/add_ln28_fu_257_p2_carry" PRIMITIVE_TYPE="CARRY.others.CARRY4" LINE_NUMBER="215"/>
+      <CELL NAME="grp_bfs_Pipeline_loop_neighbors_fu_206/add_ln28_fu_257_p2_carry__0" PRIMITIVE_TYPE="CARRY.others.CARRY4" LINE_NUMBER="215"/>
+      <CELL NAME="grp_bfs_Pipeline_loop_neighbors_fu_206/add_ln28_fu_257_p2_carry__1" PRIMITIVE_TYPE="CARRY.others.CARRY4" LINE_NUMBER="215"/>
+      <CELL NAME="grp_bfs_Pipeline_loop_neighbors_fu_206/add_ln28_fu_257_p2_carry__2" PRIMITIVE_TYPE="CARRY.others.CARRY4" LINE_NUMBER="215"/>
+      <CELL NAME="grp_bfs_Pipeline_loop_neighbors_fu_206/add_ln28_fu_257_p2_carry__3" PRIMITIVE_TYPE="CARRY.others.CARRY4" LINE_NUMBER="215"/>
+      <CELL NAME="grp_bfs_Pipeline_loop_neighbors_fu_206/add_ln28_fu_257_p2_carry__4" PRIMITIVE_TYPE="CARRY.others.CARRY4" LINE_NUMBER="215"/>
+      <CELL NAME="grp_bfs_Pipeline_loop_neighbors_fu_206/add_ln28_fu_257_p2_carry__5" PRIMITIVE_TYPE="CARRY.others.CARRY4" LINE_NUMBER="215"/>
+      <CELL NAME="grp_bfs_Pipeline_loop_neighbors_fu_206/add_ln28_fu_257_p2_carry__6" PRIMITIVE_TYPE="CARRY.others.CARRY4" LINE_NUMBER="215"/>
+      <CELL NAME="grp_bfs_Pipeline_loop_neighbors_fu_206/add_ln28_fu_257_p2_carry__7" PRIMITIVE_TYPE="CARRY.others.CARRY4" LINE_NUMBER="215"/>
+      <CELL NAME="grp_bfs_Pipeline_loop_neighbors_fu_206/add_ln28_fu_257_p2_carry__8" PRIMITIVE_TYPE="CARRY.others.CARRY4" LINE_NUMBER="215"/>
+      <CELL NAME="grp_bfs_Pipeline_loop_neighbors_fu_206/add_ln28_fu_257_p2_carry__9" PRIMITIVE_TYPE="CARRY.others.CARRY4" LINE_NUMBER="215"/>
+      <CELL NAME="grp_bfs_Pipeline_loop_neighbors_fu_206/add_ln28_fu_257_p2_carry__10" PRIMITIVE_TYPE="CARRY.others.CARRY4" LINE_NUMBER="215"/>
+      <CELL NAME="grp_bfs_Pipeline_loop_neighbors_fu_206/add_ln28_fu_257_p2_carry__11" PRIMITIVE_TYPE="CARRY.others.CARRY4" LINE_NUMBER="215"/>
+      <CELL NAME="grp_bfs_Pipeline_loop_neighbors_fu_206/add_ln28_fu_257_p2_carry__12" PRIMITIVE_TYPE="CARRY.others.CARRY4" LINE_NUMBER="215"/>
+      <CELL NAME="grp_bfs_Pipeline_loop_neighbors_fu_206/add_ln28_fu_257_p2_carry__13" PRIMITIVE_TYPE="CARRY.others.CARRY4" LINE_NUMBER="215"/>
+      <CELL NAME="grp_bfs_Pipeline_loop_neighbors_fu_206/icmp_ln28_1_fu_269_p2_carry__3_i_1" PRIMITIVE_TYPE="LUT.others.LUT6" LINE_NUMBER="215"/>
+      <CELL NAME="grp_bfs_Pipeline_loop_neighbors_fu_206/icmp_ln28_1_fu_269_p2_carry__3" PRIMITIVE_TYPE="CARRY.others.CARRY4" LINE_NUMBER="215"/>
+      <CELL NAME="grp_bfs_Pipeline_loop_neighbors_fu_206/icmp_ln28_1_fu_269_p2_carry__4" PRIMITIVE_TYPE="CARRY.others.CARRY4" LINE_NUMBER="215"/>
+      <CELL NAME="grp_bfs_Pipeline_loop_neighbors_fu_206/icmp_ln28_1_reg_397[0]_i_1" PRIMITIVE_TYPE="LUT.others.LUT4" LINE_NUMBER="304"/>
+      <CELL NAME="grp_bfs_Pipeline_loop_neighbors_fu_206/icmp_ln28_1_reg_397_reg[0]" PRIMITIVE_TYPE="FLOP_LATCH.flop.FDRE" LINE_NUMBER="304"/>
+    </TPATH>
+    <TPATH DATAPATH_DELAY="2.488" DATAPATH_LOGIC_DELAY="1.617" DATAPATH_NET_DELAY="0.871" ENDPOINT_PIN="grp_bfs_Pipeline_loop_neighbors_fu_206/cnt_1_0_fu_68_reg[61]/D" LOGIC_LEVELS="18" MAX_FANOUT="134" SLACK="7.520" STARTPOINT_PIN="grp_bfs_Pipeline_loop_neighbors_fu_206_ap_start_reg_reg/C">
+      <CELL NAME="grp_bfs_Pipeline_loop_neighbors_fu_206_ap_start_reg_reg" PRIMITIVE_TYPE="FLOP_LATCH.flop.FDRE" LINE_NUMBER="240"/>
+      <CELL NAME="grp_bfs_Pipeline_loop_neighbors_fu_206/e_1_0_fu_64[11]_i_3" PRIMITIVE_TYPE="LUT.others.LUT2" LINE_NUMBER="215"/>
+      <CELL NAME="grp_bfs_Pipeline_loop_neighbors_fu_206/cnt_1_0_fu_68[3]_i_2" PRIMITIVE_TYPE="LUT.others.LUT2" LINE_NUMBER="10"/>
+      <CELL NAME="grp_bfs_Pipeline_loop_neighbors_fu_206/cnt_1_0_fu_68_reg[3]_i_1" PRIMITIVE_TYPE="CARRY.others.CARRY4" LINE_NUMBER="220"/>
+      <CELL NAME="grp_bfs_Pipeline_loop_neighbors_fu_206/cnt_1_0_fu_68_reg[7]_i_1" PRIMITIVE_TYPE="CARRY.others.CARRY4" LINE_NUMBER="220"/>
+      <CELL NAME="grp_bfs_Pipeline_loop_neighbors_fu_206/cnt_1_0_fu_68_reg[11]_i_1" PRIMITIVE_TYPE="CARRY.others.CARRY4" LINE_NUMBER="220"/>
+      <CELL NAME="grp_bfs_Pipeline_loop_neighbors_fu_206/cnt_1_0_fu_68_reg[15]_i_1" PRIMITIVE_TYPE="CARRY.others.CARRY4" LINE_NUMBER="220"/>
+      <CELL NAME="grp_bfs_Pipeline_loop_neighbors_fu_206/cnt_1_0_fu_68_reg[19]_i_1" PRIMITIVE_TYPE="CARRY.others.CARRY4" LINE_NUMBER="220"/>
+      <CELL NAME="grp_bfs_Pipeline_loop_neighbors_fu_206/cnt_1_0_fu_68_reg[23]_i_1" PRIMITIVE_TYPE="CARRY.others.CARRY4" LINE_NUMBER="220"/>
+      <CELL NAME="grp_bfs_Pipeline_loop_neighbors_fu_206/cnt_1_0_fu_68_reg[27]_i_1" PRIMITIVE_TYPE="CARRY.others.CARRY4" LINE_NUMBER="220"/>
+      <CELL NAME="grp_bfs_Pipeline_loop_neighbors_fu_206/cnt_1_0_fu_68_reg[31]_i_1" PRIMITIVE_TYPE="CARRY.others.CARRY4" LINE_NUMBER="220"/>
+      <CELL NAME="grp_bfs_Pipeline_loop_neighbors_fu_206/cnt_1_0_fu_68_reg[35]_i_1" PRIMITIVE_TYPE="CARRY.others.CARRY4" LINE_NUMBER="220"/>
+      <CELL NAME="grp_bfs_Pipeline_loop_neighbors_fu_206/cnt_1_0_fu_68_reg[39]_i_1" PRIMITIVE_TYPE="CARRY.others.CARRY4" LINE_NUMBER="220"/>
+      <CELL NAME="grp_bfs_Pipeline_loop_neighbors_fu_206/cnt_1_0_fu_68_reg[43]_i_1" PRIMITIVE_TYPE="CARRY.others.CARRY4" LINE_NUMBER="220"/>
+      <CELL NAME="grp_bfs_Pipeline_loop_neighbors_fu_206/cnt_1_0_fu_68_reg[47]_i_1" PRIMITIVE_TYPE="CARRY.others.CARRY4" LINE_NUMBER="220"/>
+      <CELL NAME="grp_bfs_Pipeline_loop_neighbors_fu_206/cnt_1_0_fu_68_reg[51]_i_1" PRIMITIVE_TYPE="CARRY.others.CARRY4" LINE_NUMBER="220"/>
+      <CELL NAME="grp_bfs_Pipeline_loop_neighbors_fu_206/cnt_1_0_fu_68_reg[55]_i_1" PRIMITIVE_TYPE="CARRY.others.CARRY4" LINE_NUMBER="220"/>
+      <CELL NAME="grp_bfs_Pipeline_loop_neighbors_fu_206/cnt_1_0_fu_68_reg[59]_i_1" PRIMITIVE_TYPE="CARRY.others.CARRY4" LINE_NUMBER="220"/>
+      <CELL NAME="grp_bfs_Pipeline_loop_neighbors_fu_206/cnt_1_0_fu_68_reg[63]_i_2" PRIMITIVE_TYPE="CARRY.others.CARRY4" LINE_NUMBER="220"/>
+      <CELL NAME="grp_bfs_Pipeline_loop_neighbors_fu_206/cnt_1_0_fu_68_reg[61]" PRIMITIVE_TYPE="FLOP_LATCH.flop.FDRE" LINE_NUMBER="270"/>
+    </TPATH>
+    <TPATH DATAPATH_DELAY="2.470" DATAPATH_LOGIC_DELAY="1.599" DATAPATH_NET_DELAY="0.871" ENDPOINT_PIN="grp_bfs_Pipeline_loop_neighbors_fu_206/cnt_1_0_fu_68_reg[63]/D" LOGIC_LEVELS="18" MAX_FANOUT="134" SLACK="7.538" STARTPOINT_PIN="grp_bfs_Pipeline_loop_neighbors_fu_206_ap_start_reg_reg/C">
+      <CELL NAME="grp_bfs_Pipeline_loop_neighbors_fu_206_ap_start_reg_reg" PRIMITIVE_TYPE="FLOP_LATCH.flop.FDRE" LINE_NUMBER="240"/>
+      <CELL NAME="grp_bfs_Pipeline_loop_neighbors_fu_206/e_1_0_fu_64[11]_i_3" PRIMITIVE_TYPE="LUT.others.LUT2" LINE_NUMBER="215"/>
+      <CELL NAME="grp_bfs_Pipeline_loop_neighbors_fu_206/cnt_1_0_fu_68[3]_i_2" PRIMITIVE_TYPE="LUT.others.LUT2" LINE_NUMBER="10"/>
+      <CELL NAME="grp_bfs_Pipeline_loop_neighbors_fu_206/cnt_1_0_fu_68_reg[3]_i_1" PRIMITIVE_TYPE="CARRY.others.CARRY4" LINE_NUMBER="220"/>
+      <CELL NAME="grp_bfs_Pipeline_loop_neighbors_fu_206/cnt_1_0_fu_68_reg[7]_i_1" PRIMITIVE_TYPE="CARRY.others.CARRY4" LINE_NUMBER="220"/>
+      <CELL NAME="grp_bfs_Pipeline_loop_neighbors_fu_206/cnt_1_0_fu_68_reg[11]_i_1" PRIMITIVE_TYPE="CARRY.others.CARRY4" LINE_NUMBER="220"/>
+      <CELL NAME="grp_bfs_Pipeline_loop_neighbors_fu_206/cnt_1_0_fu_68_reg[15]_i_1" PRIMITIVE_TYPE="CARRY.others.CARRY4" LINE_NUMBER="220"/>
+      <CELL NAME="grp_bfs_Pipeline_loop_neighbors_fu_206/cnt_1_0_fu_68_reg[19]_i_1" PRIMITIVE_TYPE="CARRY.others.CARRY4" LINE_NUMBER="220"/>
+      <CELL NAME="grp_bfs_Pipeline_loop_neighbors_fu_206/cnt_1_0_fu_68_reg[23]_i_1" PRIMITIVE_TYPE="CARRY.others.CARRY4" LINE_NUMBER="220"/>
+      <CELL NAME="grp_bfs_Pipeline_loop_neighbors_fu_206/cnt_1_0_fu_68_reg[27]_i_1" PRIMITIVE_TYPE="CARRY.others.CARRY4" LINE_NUMBER="220"/>
+      <CELL NAME="grp_bfs_Pipeline_loop_neighbors_fu_206/cnt_1_0_fu_68_reg[31]_i_1" PRIMITIVE_TYPE="CARRY.others.CARRY4" LINE_NUMBER="220"/>
+      <CELL NAME="grp_bfs_Pipeline_loop_neighbors_fu_206/cnt_1_0_fu_68_reg[35]_i_1" PRIMITIVE_TYPE="CARRY.others.CARRY4" LINE_NUMBER="220"/>
+      <CELL NAME="grp_bfs_Pipeline_loop_neighbors_fu_206/cnt_1_0_fu_68_reg[39]_i_1" PRIMITIVE_TYPE="CARRY.others.CARRY4" LINE_NUMBER="220"/>
+      <CELL NAME="grp_bfs_Pipeline_loop_neighbors_fu_206/cnt_1_0_fu_68_reg[43]_i_1" PRIMITIVE_TYPE="CARRY.others.CARRY4" LINE_NUMBER="220"/>
+      <CELL NAME="grp_bfs_Pipeline_loop_neighbors_fu_206/cnt_1_0_fu_68_reg[47]_i_1" PRIMITIVE_TYPE="CARRY.others.CARRY4" LINE_NUMBER="220"/>
+      <CELL NAME="grp_bfs_Pipeline_loop_neighbors_fu_206/cnt_1_0_fu_68_reg[51]_i_1" PRIMITIVE_TYPE="CARRY.others.CARRY4" LINE_NUMBER="220"/>
+      <CELL NAME="grp_bfs_Pipeline_loop_neighbors_fu_206/cnt_1_0_fu_68_reg[55]_i_1" PRIMITIVE_TYPE="CARRY.others.CARRY4" LINE_NUMBER="220"/>
+      <CELL NAME="grp_bfs_Pipeline_loop_neighbors_fu_206/cnt_1_0_fu_68_reg[59]_i_1" PRIMITIVE_TYPE="CARRY.others.CARRY4" LINE_NUMBER="220"/>
+      <CELL NAME="grp_bfs_Pipeline_loop_neighbors_fu_206/cnt_1_0_fu_68_reg[63]_i_2" PRIMITIVE_TYPE="CARRY.others.CARRY4" LINE_NUMBER="220"/>
+      <CELL NAME="grp_bfs_Pipeline_loop_neighbors_fu_206/cnt_1_0_fu_68_reg[63]" PRIMITIVE_TYPE="FLOP_LATCH.flop.FDRE" LINE_NUMBER="270"/>
+    </TPATH>
+    <TPATH DATAPATH_DELAY="2.220" DATAPATH_LOGIC_DELAY="0.458" DATAPATH_NET_DELAY="1.762" ENDPOINT_PIN="horizon_fu_76_reg[0]/CE" LOGIC_LEVELS="3" MAX_FANOUT="65" SLACK="7.540" STARTPOINT_PIN="cnt_reg_166_reg[40]/C">
+      <CELL NAME="cnt_reg_166_reg[40]" PRIMITIVE_TYPE="FLOP_LATCH.flop.FDRE" LINE_NUMBER="260"/>
+      <CELL NAME="ap_ready_INST_0_i_8" PRIMITIVE_TYPE="LUT.others.LUT4" LINE_NUMBER="215"/>
+      <CELL NAME="ap_ready_INST_0_i_1" PRIMITIVE_TYPE="LUT.others.LUT4" LINE_NUMBER="215"/>
+      <CELL NAME="horizon_fu_76[63]_i_1" PRIMITIVE_TYPE="LUT.others.LUT6" LINE_NUMBER="215"/>
+      <CELL NAME="horizon_fu_76_reg[0]" PRIMITIVE_TYPE="FLOP_LATCH.flop.FDRE" LINE_NUMBER="268"/>
+    </TPATH>
+    <TPATH DATAPATH_DELAY="2.220" DATAPATH_LOGIC_DELAY="0.458" DATAPATH_NET_DELAY="1.762" ENDPOINT_PIN="horizon_fu_76_reg[10]/CE" LOGIC_LEVELS="3" MAX_FANOUT="65" SLACK="7.540" STARTPOINT_PIN="cnt_reg_166_reg[40]/C">
+      <CELL NAME="cnt_reg_166_reg[40]" PRIMITIVE_TYPE="FLOP_LATCH.flop.FDRE" LINE_NUMBER="260"/>
+      <CELL NAME="ap_ready_INST_0_i_8" PRIMITIVE_TYPE="LUT.others.LUT4" LINE_NUMBER="215"/>
+      <CELL NAME="ap_ready_INST_0_i_1" PRIMITIVE_TYPE="LUT.others.LUT4" LINE_NUMBER="215"/>
+      <CELL NAME="horizon_fu_76[63]_i_1" PRIMITIVE_TYPE="LUT.others.LUT6" LINE_NUMBER="215"/>
+      <CELL NAME="horizon_fu_76_reg[10]" PRIMITIVE_TYPE="FLOP_LATCH.flop.FDRE" LINE_NUMBER="268"/>
+    </TPATH>
+  </TimingPaths>
+  <VivadoReportFiles>
+    <ReportFile TYPE="design_analysis" PATH="verilog/report/bfs_design_analysis_synth.rpt"/>
+    <ReportFile TYPE="failfast" PATH="verilog/report/bfs_failfast_synth.rpt"/>
+    <ReportFile TYPE="timing" PATH="verilog/report/bfs_timing_synth.rpt"/>
+    <ReportFile TYPE="timing_paths" PATH="verilog/report/bfs_timing_paths_synth.rpt"/>
+    <ReportFile TYPE="utilization" PATH="verilog/report/bfs_utilization_synth.rpt"/>
+    <ReportFile TYPE="utilization_hierarchical" PATH="verilog/report/bfs_utilization_hierarchical_synth.rpt"/>
+  </VivadoReportFiles>
+  <GeneralInfo NAME="General Information">
+    <item NAME="Date" VALUE="Sat May 27 17:00:19 CST 2023"/>
+    <item NAME="Version" VALUE="2022.1 (Build 3526262 on Mon Apr 18 15:47:01 MDT 2022)"/>
+    <item NAME="Project" VALUE="bfs_random_prj"/>
+    <item NAME="Solution" VALUE="solution (Vivado IP Flow Target)"/>
+    <item NAME="Product family" VALUE="virtex7"/>
+    <item NAME="Target device" VALUE="xc7vx485t-ffg1761-2"/>
+  </GeneralInfo>
+  <RunOptions NAME="Run Constraints &amp; Options">
+    <General NAME="Design Constraints &amp; Options">
+      <item NAME="RTL Synthesis target clock" VALUE="10 ns"/>
+      <item NAME="C-Synthesis target clock" VALUE="10 ns"/>
+      <item NAME="C-Synthesis uncertainty" VALUE="27%"/>
+      <item NAME="config_export -ip_xdc_file" VALUE=""/>
+      <item NAME="config_export -ip_xdc_ooc_file" VALUE=""/>
+    </General>
+    <Syn NAME="RTL Synthesis Options">
+      <item NAME="config_export -vivado_synth_strategy" VALUE="default"/>
+      <item NAME="config_export -vivado_synth_design_args" VALUE="-directive sdx_optimization_effort_high"/>
+    </Syn>
+    <Reporting NAME="Reporting Options">
+      <item NAME="config_export -vivado_report_level" VALUE="2"/>
+      <item NAME="config_export -vivado_max_timing_paths" VALUE="10"/>
+    </Reporting>
+  </RunOptions>
+</profile>
+

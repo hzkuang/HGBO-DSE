@@ -1,0 +1,39 @@
+top:
+    - ellpack
+funcList:
+    -
+loopList:
+    group1:
+        level:
+            - ellpack/ellpack_1
+            - ellpack/ellpack_2
+        unroll:
+            - ellpack/ellpack_1
+            - ellpack/ellpack_2
+        pipeline:
+            - ellpack/ellpack_1
+            - ellpack/ellpack_2
+        flatten:
+            - 
+arrList:
+    -
+interList:
+    - ellpack nzval
+    - ellpack cols
+    - ellpack vec
+    - ellpack out
+dictOp:
+    int:
+        ellpack/ellpack_1 i:
+            - add
+        ellpack/ellpack_2 j:
+            - add
+    float:
+        -
+    double:
+        ellpack/ellpack_2 Si:
+            - dmul
+        ellpack/ellpack_2 sum:
+            - dadd
+    half:
+        -

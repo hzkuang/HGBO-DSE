@@ -1,0 +1,207 @@
+
+
+================================================================
+== Vitis HLS Report for 'bfs'
+================================================================
+* Date:           Sat May 27 16:57:08 2023
+
+* Version:        2022.1 (Build 3526262 on Mon Apr 18 15:47:01 MDT 2022)
+* Project:        bfs_random_prj
+* Solution:       solution (Vivado IP Flow Target)
+* Product family: virtex7
+* Target device:  xc7vx485t-ffg1761-2
+
+
+================================================================
+== Performance Estimates
+================================================================
++ Timing: 
+    * Summary: 
+    +--------+----------+----------+------------+
+    |  Clock |  Target  | Estimated| Uncertainty|
+    +--------+----------+----------+------------+
+    |ap_clk  |  10.00 ns|  5.393 ns|     2.70 ns|
+    +--------+----------+----------+------------+
+
++ Latency: 
+    * Summary: 
+    +---------+---------+----------+----------+-----+-----+---------+
+    |  Latency (cycles) |  Latency (absolute) |  Interval | Pipeline|
+    |   min   |   max   |    min   |    max   | min | max |   Type  |
+    +---------+---------+----------+----------+-----+-----+---------+
+    |        ?|        ?|         ?|         ?|    ?|    ?|       no|
+    +---------+---------+----------+----------+-----+-----+---------+
+
+    + Detail: 
+        * Instance: 
+        +----------------------------------------+-----------------------------+---------+---------+----------+----------+-----+-----+---------+
+        |                                        |                             |  Latency (cycles) |  Latency (absolute) |  Interval | Pipeline|
+        |                Instance                |            Module           |   min   |   max   |    min   |    max   | min | max |   Type  |
+        +----------------------------------------+-----------------------------+---------+---------+----------+----------+-----+-----+---------+
+        |grp_bfs_Pipeline_loop_neighbors_fu_206  |bfs_Pipeline_loop_neighbors  |        ?|        ?|         ?|         ?|    ?|    ?|       no|
+        +----------------------------------------+-----------------------------+---------+---------+----------+----------+-----+-----+---------+
+
+        * Loop: 
+        +-----------------+---------+---------+----------+-----------+-----------+------+----------+
+        |                 |  Latency (cycles) | Iteration|  Initiation Interval  | Trip |          |
+        |    Loop Name    |   min   |   max   |  Latency |  achieved |   target  | Count| Pipelined|
+        +-----------------+---------+---------+----------+-----------+-----------+------+----------+
+        |- loop_horizons  |        ?|        ?|         ?|          -|          -|     ?|        no|
+        | + loop_nodes    |        ?|        ?|         ?|          -|          -|   256|        no|
+        +-----------------+---------+---------+----------+-----------+-----------+------+----------+
+
+
+
+================================================================
+== Utilization Estimates
+================================================================
+* Summary: 
++-----------------+---------+------+--------+--------+-----+
+|       Name      | BRAM_18K|  DSP |   FF   |   LUT  | URAM|
++-----------------+---------+------+--------+--------+-----+
+|DSP              |        -|     -|       -|       -|    -|
+|Expression       |        -|     -|       0|     308|    -|
+|FIFO             |        -|     -|       -|       -|    -|
+|Instance         |        -|     -|     413|     521|    -|
+|Memory           |        -|     -|       -|       -|    -|
+|Multiplexer      |        -|     -|       -|     160|    -|
+|Register         |        -|     -|     626|       -|    -|
++-----------------+---------+------+--------+--------+-----+
+|Total            |        0|     0|    1039|     989|    0|
++-----------------+---------+------+--------+--------+-----+
+|Available        |     2060|  2800|  607200|  303600|    0|
++-----------------+---------+------+--------+--------+-----+
+|Utilization (%)  |        0|     0|      ~0|      ~0|    0|
++-----------------+---------+------+--------+--------+-----+
+
++ Detail: 
+    * Instance: 
+    +----------------------------------------+-----------------------------+---------+----+-----+-----+-----+
+    |                Instance                |            Module           | BRAM_18K| DSP|  FF | LUT | URAM|
+    +----------------------------------------+-----------------------------+---------+----+-----+-----+-----+
+    |grp_bfs_Pipeline_loop_neighbors_fu_206  |bfs_Pipeline_loop_neighbors  |        0|   0|  413|  521|    0|
+    +----------------------------------------+-----------------------------+---------+----+-----+-----+-----+
+    |Total                                   |                             |        0|   0|  413|  521|    0|
+    +----------------------------------------+-----------------------------+---------+----+-----+-----+-----+
+
+    * DSP: 
+    N/A
+
+    * Memory: 
+    N/A
+
+    * FIFO: 
+    N/A
+
+    * Expression: 
+    +-------------------------+----------+----+---+----+------------+------------+
+    |      Variable Name      | Operation| DSP| FF| LUT| Bitwidth P0| Bitwidth P1|
+    +-------------------------+----------+----+---+----+------------+------------+
+    |add_ln21_cast_fu_245_p2  |         +|   0|  0|  13|           4|           1|
+    |add_ln21_fu_239_p2       |         +|   0|  0|  71|          64|           1|
+    |empty_fu_251_p2          |         +|   0|  0|  15|           8|           1|
+    |n_1_fu_263_p2            |         +|   0|  0|  16|           9|           1|
+    |and_ln39_fu_303_p2       |       and|   0|  0|   2|           1|           1|
+    |icmp_ln21_fu_298_p2      |      icmp|   0|  0|  29|          64|           4|
+    |icmp_ln24_fu_257_p2      |      icmp|   0|  0|  11|           9|          10|
+    |icmp_ln25_fu_321_p2      |      icmp|   0|  0|  29|          64|          64|
+    |icmp_ln28_fu_342_p2      |      icmp|   0|  0|  29|          64|          64|
+    |icmp_ln39_fu_292_p2      |      icmp|   0|  0|  29|          64|           1|
+    |select_ln28_fu_354_p3    |    select|   0|  0|  64|           1|          64|
+    +-------------------------+----------+----+---+----+------------+------------+
+    |Total                    |          |   0|  0| 308|         352|         212|
+    +-------------------------+----------+----+---+----+------------+------------+
+
+    * Multiplexer: 
+    +--------------------------------+----+-----------+-----+-----------+
+    |              Name              | LUT| Input Size| Bits| Total Bits|
+    +--------------------------------+----+-----------+-----+-----------+
+    |ap_NS_fsm                       |  33|          8|    1|          8|
+    |ap_phi_mux_cnt_1_phi_fu_195_p6  |   9|          2|   64|        128|
+    |cnt_1_reg_191                   |   9|          2|   64|        128|
+    |cnt_reg_166                     |   9|          2|   64|        128|
+    |horizon_fu_76                   |   9|          2|   64|        128|
+    |level_address0                  |  17|          4|    8|         32|
+    |level_ce0                       |  13|          3|    1|          3|
+    |level_counts_0_address0         |  13|          3|    3|          9|
+    |level_counts_0_d0               |  13|          3|   64|        192|
+    |level_d0                        |  13|          3|    8|         24|
+    |level_we0                       |  13|          3|    1|          3|
+    |n_reg_180                       |   9|          2|    9|         18|
+    +--------------------------------+----+-----------+-----+-----------+
+    |Total                           | 160|         37|  351|        801|
+    +--------------------------------+----+-----------+-----+-----------+
+
+    * Register: 
+    +-----------------------------------------------------+----+----+-----+-----------+
+    |                         Name                        | FF | LUT| Bits| Const Bits|
+    +-----------------------------------------------------+----+----+-----+-----------+
+    |add_ln21_cast_reg_392                                |   4|   0|    4|          0|
+    |add_ln21_reg_386                                     |  64|   0|   64|          0|
+    |ap_CS_fsm                                            |   7|   0|    7|          0|
+    |cnt_1_0_loc_fu_84                                    |  64|   0|   64|          0|
+    |cnt_1_reg_191                                        |  64|   0|   64|          0|
+    |cnt_2_0_loc_fu_80                                    |  64|   0|   64|          0|
+    |cnt_reg_166                                          |  64|   0|   64|          0|
+    |empty_reg_397                                        |   8|   0|    8|          0|
+    |grp_bfs_Pipeline_loop_neighbors_fu_206_ap_start_reg  |   1|   0|    1|          0|
+    |horizon_1_reg_381                                    |  64|   0|   64|          0|
+    |horizon_fu_76                                        |  64|   0|   64|          0|
+    |icmp_ln25_reg_426                                    |   1|   0|    1|          0|
+    |icmp_ln28_reg_445                                    |   1|   0|    1|          0|
+    |n_1_reg_405                                          |   9|   0|    9|          0|
+    |n_reg_180                                            |   9|   0|    9|          0|
+    |targetBlock_reg_449                                  |   1|   0|    1|          0|
+    |tmp_begin_reg_435                                    |  64|   0|   64|          0|
+    |tmp_end_reg_440                                      |  64|   0|   64|          0|
+    |zext_ln24_reg_410                                    |   9|   0|   64|         55|
+    +-----------------------------------------------------+----+----+-----+-----------+
+    |Total                                                | 626|   0|  681|         55|
+    +-----------------------------------------------------+----+----+-----+-----------+
+
+
+
+================================================================
+== Interface
+================================================================
+* Summary: 
++-------------------------+-----+-----+------------+----------------+--------------+
+|        RTL Ports        | Dir | Bits|  Protocol  |  Source Object |    C Type    |
++-------------------------+-----+-----+------------+----------------+--------------+
+|ap_clk                   |   in|    1|  ap_ctrl_hs|             bfs|  return value|
+|ap_rst                   |   in|    1|  ap_ctrl_hs|             bfs|  return value|
+|ap_start                 |   in|    1|  ap_ctrl_hs|             bfs|  return value|
+|ap_done                  |  out|    1|  ap_ctrl_hs|             bfs|  return value|
+|ap_idle                  |  out|    1|  ap_ctrl_hs|             bfs|  return value|
+|ap_ready                 |  out|    1|  ap_ctrl_hs|             bfs|  return value|
+|nodes_address0           |  out|    8|   ap_memory|           nodes|         array|
+|nodes_ce0                |  out|    1|   ap_memory|           nodes|         array|
+|nodes_q0                 |   in|  128|   ap_memory|           nodes|         array|
+|edges_0_address0         |  out|   11|   ap_memory|         edges_0|         array|
+|edges_0_ce0              |  out|    1|   ap_memory|         edges_0|         array|
+|edges_0_q0               |   in|   64|   ap_memory|         edges_0|         array|
+|edges_0_address1         |  out|   11|   ap_memory|         edges_0|         array|
+|edges_0_ce1              |  out|    1|   ap_memory|         edges_0|         array|
+|edges_0_q1               |   in|   64|   ap_memory|         edges_0|         array|
+|edges_1_address0         |  out|   11|   ap_memory|         edges_1|         array|
+|edges_1_ce0              |  out|    1|   ap_memory|         edges_1|         array|
+|edges_1_q0               |   in|   64|   ap_memory|         edges_1|         array|
+|edges_1_address1         |  out|   11|   ap_memory|         edges_1|         array|
+|edges_1_ce1              |  out|    1|   ap_memory|         edges_1|         array|
+|edges_1_q1               |   in|   64|   ap_memory|         edges_1|         array|
+|starting_node            |   in|   64|     ap_none|   starting_node|        scalar|
+|level_address0           |  out|    8|   ap_memory|           level|         array|
+|level_ce0                |  out|    1|   ap_memory|           level|         array|
+|level_we0                |  out|    1|   ap_memory|           level|         array|
+|level_d0                 |  out|    8|   ap_memory|           level|         array|
+|level_q0                 |   in|    8|   ap_memory|           level|         array|
+|level_counts_0_address0  |  out|    3|   ap_memory|  level_counts_0|         array|
+|level_counts_0_ce0       |  out|    1|   ap_memory|  level_counts_0|         array|
+|level_counts_0_we0       |  out|    1|   ap_memory|  level_counts_0|         array|
+|level_counts_0_d0        |  out|   64|   ap_memory|  level_counts_0|         array|
+|level_counts_1_address0  |  out|    3|   ap_memory|  level_counts_1|         array|
+|level_counts_1_ce0       |  out|    1|   ap_memory|  level_counts_1|         array|
+|level_counts_1_we0       |  out|    1|   ap_memory|  level_counts_1|         array|
+|level_counts_1_d0        |  out|   64|   ap_memory|  level_counts_1|         array|
++-------------------------+-----+-----+------------+----------------+--------------+
+

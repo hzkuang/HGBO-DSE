@@ -1,0 +1,190 @@
+================================================================
+== Vivado Place & Route Results
+================================================================
++ General Information:
+    * Date:            Sat May 27 17:00:19 CST 2023
+    * Version:         2022.1 (Build 3526262 on Mon Apr 18 15:47:01 MDT 2022)
+    * Project:         bfs_random_prj
+    * Solution:        solution (Vivado IP Flow Target)
+    * Product family:  virtex7
+    * Target device:   xc7vx485t-ffg1761-2
+
+
+================================================================
+== Run Constraints & Options
+================================================================
++ Design Constraints & Options:
+    * Place & Route target clock:  10 ns
+    * C-Synthesis target clock:    10 ns
+    * C-Synthesis uncertainty:     27%
+
++ RTL Synthesis Options:
+    * config_export -vivado_synth_strategy:     default
+    * config_export -vivado_synth_design_args:  -directive sdx_optimization_effort_high
+
++ Place & Route Options:
+    * config_export -vivado_impl_strategy:  default
+    * config_export -vivado_phys_opt:       none
+
++ Reporting Options:
+    * config_export -vivado_report_level:      2
+    * config_export -vivado_max_timing_paths:  10
+
+
+================================================================
+== Place & Route Resource Summary
+================================================================
+LUT:              478
+FF:               1033
+DSP:              0
+BRAM:             0
+URAM:             0
+SRL:              0
+
+
+================================================================
+== Place & Route Timing Summary
+================================================================
+* Timing was met
++----------------+-------------+
+| Timing         | Period (ns) |
++----------------+-------------+
+| Target         | 10.000      |
+| Post-Synthesis | 2.991       |
+| Post-Route     | 3.985       |
++----------------+-------------+
+
+
+================================================================
+== Place & Route Resources
+================================================================
++------------------------------------------+-----+------+-----+------+------+-----+--------+------+---------+----------+--------+
+| Name                                     | LUT | FF   | DSP | BRAM | URAM | SRL | Pragma | Impl | Latency | Variable | Source |
++------------------------------------------+-----+------+-----+------+------+-----+--------+------+---------+----------+--------+
+| inst                                     | 478 | 1033 |     |      |      |     |        |      |         |          |        |
+|   (inst)                                 | 287 | 620  |     |      |      |     |        |      |         |          |        |
+|   grp_bfs_Pipeline_loop_neighbors_fu_206 | 191 | 413  |     |      |      |     |        |      |         |          |        |
++------------------------------------------+-----+------+-----+------+------+-----+--------+------+---------+----------+--------+
+
+
+================================================================
+== Place & Route Fail Fast
+================================================================
++-----------------------------------------------------------+-----------+--------+--------+
+| Criteria                                                  | Guideline | Actual | Status |
++-----------------------------------------------------------+-----------+--------+--------+
+| LUT                                                       | 70%       | 0.16%  | OK     |
+| FD                                                        | 50%       | 0.17%  | OK     |
+| LUTRAM+SRL                                                | 25%       | 0.00%  | OK     |
+| MUXF7                                                     | 15%       | 0.00%  | OK     |
+| DSP                                                       | 80%       | 0.00%  | OK     |
+| RAMB/FIFO                                                 | 80%       | 0.00%  | OK     |
+| DSP+RAMB+URAM (Avg)                                       | 70%       | 0.00%  | OK     |
+| BUFGCE* + BUFGCTRL                                        | 24        | 0      | OK     |
+| DONT_TOUCH (cells/nets)                                   | 0         | 0      | OK     |
+| MARK_DEBUG (nets)                                         | 0         | 0      | OK     |
+| Control Sets                                              | 5692      | 19     | OK     |
+| Average Fanout for modules > 100k cells                   | 4         | 0      | OK     |
+| Non-FD high fanout nets > 10k loads                       | 0         | 0      | OK     |
++-----------------------------------------------------------+-----------+--------+--------+
+| TIMING-6 (No common primary clock between related clocks) | 0         | 0      | OK     |
+| TIMING-7 (No common node between related clocks)          | 0         | 0      | OK     |
+| TIMING-8 (No common period between related clocks)        | 0         | 0      | OK     |
+| TIMING-14 (LUT on the clock tree)                         | 0         | 0      | OK     |
+| TIMING-35 (No common node in paths with the same clock)   | 0         | 0      | OK     |
++-----------------------------------------------------------+-----------+--------+--------+
+| Number of paths above max LUT budgeting (0.500ns)         | 0         | 0      | OK     |
+| Number of paths above max Net budgeting (0.350ns)         | 0         | 0      | OK     |
++-----------------------------------------------------------+-----------+--------+--------+
+
+
+================================================================
+== Place & Route Timing Paths
+================================================================
+* Timing was met
++-------+-------+-------------------------------------------------------------------+---------------------------------------------------------------------+--------------+------------+----------------+----------------+--------------+
+| Path  | SLACK | STARTPOINT PIN                                                    | ENDPOINT PIN                                                        | LOGIC LEVELS | MAX FANOUT | DATAPATH DELAY | DATAPATH LOGIC | DATAPATH NET |
+|       |       |                                                                   |                                                                     |              |            |                |          DELAY |        DELAY |
++-------+-------+-------------------------------------------------------------------+---------------------------------------------------------------------+--------------+------------+----------------+----------------+--------------+
+| Path1 | 6.015 | grp_bfs_Pipeline_loop_neighbors_fu_206/e_1_0_fu_64_reg[1]/C       | grp_bfs_Pipeline_loop_neighbors_fu_206/icmp_ln28_1_reg_397_reg[0]/D |           19 |          5 |          3.986 |          1.909 |        2.077 |
+| Path2 | 6.191 | grp_bfs_Pipeline_loop_neighbors_fu_206/icmp_ln28_reg_383_reg[0]/C | cnt_1_0_loc_fu_84_reg[10]/CE                                        |            1 |         64 |          3.474 |          0.338 |        3.136 |
+| Path3 | 6.191 | grp_bfs_Pipeline_loop_neighbors_fu_206/icmp_ln28_reg_383_reg[0]/C | cnt_1_0_loc_fu_84_reg[12]/CE                                        |            1 |         64 |          3.474 |          0.338 |        3.136 |
+| Path4 | 6.191 | grp_bfs_Pipeline_loop_neighbors_fu_206/icmp_ln28_reg_383_reg[0]/C | cnt_1_0_loc_fu_84_reg[17]/CE                                        |            1 |         64 |          3.474 |          0.338 |        3.136 |
+| Path5 | 6.191 | grp_bfs_Pipeline_loop_neighbors_fu_206/icmp_ln28_reg_383_reg[0]/C | cnt_1_0_loc_fu_84_reg[22]/CE                                        |            1 |         64 |          3.474 |          0.338 |        3.136 |
++-------+-------+-------------------------------------------------------------------+---------------------------------------------------------------------+--------------+------------+----------------+----------------+--------------+
+
+    +---------------------------------------------------------------------------+----------------------+
+    | Path1 Cells                                                               | Primitive Type       |
+    +---------------------------------------------------------------------------+----------------------+
+    | grp_bfs_Pipeline_loop_neighbors_fu_206/e_1_0_fu_64_reg[1]                 | FLOP_LATCH.flop.FDRE |
+    | grp_bfs_Pipeline_loop_neighbors_fu_206/add_ln28_fu_257_p2_carry           | CARRY.others.CARRY4  |
+    | grp_bfs_Pipeline_loop_neighbors_fu_206/add_ln28_fu_257_p2_carry__0        | CARRY.others.CARRY4  |
+    | grp_bfs_Pipeline_loop_neighbors_fu_206/add_ln28_fu_257_p2_carry__1        | CARRY.others.CARRY4  |
+    | grp_bfs_Pipeline_loop_neighbors_fu_206/add_ln28_fu_257_p2_carry__2        | CARRY.others.CARRY4  |
+    | grp_bfs_Pipeline_loop_neighbors_fu_206/add_ln28_fu_257_p2_carry__3        | CARRY.others.CARRY4  |
+    | grp_bfs_Pipeline_loop_neighbors_fu_206/add_ln28_fu_257_p2_carry__4        | CARRY.others.CARRY4  |
+    | grp_bfs_Pipeline_loop_neighbors_fu_206/add_ln28_fu_257_p2_carry__5        | CARRY.others.CARRY4  |
+    | grp_bfs_Pipeline_loop_neighbors_fu_206/add_ln28_fu_257_p2_carry__6        | CARRY.others.CARRY4  |
+    | grp_bfs_Pipeline_loop_neighbors_fu_206/add_ln28_fu_257_p2_carry__7        | CARRY.others.CARRY4  |
+    | grp_bfs_Pipeline_loop_neighbors_fu_206/add_ln28_fu_257_p2_carry__8        | CARRY.others.CARRY4  |
+    | grp_bfs_Pipeline_loop_neighbors_fu_206/add_ln28_fu_257_p2_carry__9        | CARRY.others.CARRY4  |
+    | grp_bfs_Pipeline_loop_neighbors_fu_206/add_ln28_fu_257_p2_carry__10       | CARRY.others.CARRY4  |
+    | grp_bfs_Pipeline_loop_neighbors_fu_206/add_ln28_fu_257_p2_carry__11       | CARRY.others.CARRY4  |
+    | grp_bfs_Pipeline_loop_neighbors_fu_206/add_ln28_fu_257_p2_carry__12       | CARRY.others.CARRY4  |
+    | grp_bfs_Pipeline_loop_neighbors_fu_206/add_ln28_fu_257_p2_carry__13       | CARRY.others.CARRY4  |
+    | grp_bfs_Pipeline_loop_neighbors_fu_206/icmp_ln28_1_fu_269_p2_carry__3_i_1 | LUT.others.LUT6      |
+    | grp_bfs_Pipeline_loop_neighbors_fu_206/icmp_ln28_1_fu_269_p2_carry__3     | CARRY.others.CARRY4  |
+    | grp_bfs_Pipeline_loop_neighbors_fu_206/icmp_ln28_1_fu_269_p2_carry__4     | CARRY.others.CARRY4  |
+    | grp_bfs_Pipeline_loop_neighbors_fu_206/icmp_ln28_1_reg_397[0]_i_1         | LUT.others.LUT4      |
+    | grp_bfs_Pipeline_loop_neighbors_fu_206/icmp_ln28_1_reg_397_reg[0]         | FLOP_LATCH.flop.FDRE |
+    +---------------------------------------------------------------------------+----------------------+
+
+    +------------------------------------------------------------------+----------------------+
+    | Path2 Cells                                                      | Primitive Type       |
+    +------------------------------------------------------------------+----------------------+
+    | grp_bfs_Pipeline_loop_neighbors_fu_206/icmp_ln28_reg_383_reg[0]  | FLOP_LATCH.flop.FDRE |
+    | grp_bfs_Pipeline_loop_neighbors_fu_206/cnt_1_0_loc_fu_84[63]_i_1 | LUT.others.LUT4      |
+    | cnt_1_0_loc_fu_84_reg[10]                                        | FLOP_LATCH.flop.FDRE |
+    +------------------------------------------------------------------+----------------------+
+
+    +------------------------------------------------------------------+----------------------+
+    | Path3 Cells                                                      | Primitive Type       |
+    +------------------------------------------------------------------+----------------------+
+    | grp_bfs_Pipeline_loop_neighbors_fu_206/icmp_ln28_reg_383_reg[0]  | FLOP_LATCH.flop.FDRE |
+    | grp_bfs_Pipeline_loop_neighbors_fu_206/cnt_1_0_loc_fu_84[63]_i_1 | LUT.others.LUT4      |
+    | cnt_1_0_loc_fu_84_reg[12]                                        | FLOP_LATCH.flop.FDRE |
+    +------------------------------------------------------------------+----------------------+
+
+    +------------------------------------------------------------------+----------------------+
+    | Path4 Cells                                                      | Primitive Type       |
+    +------------------------------------------------------------------+----------------------+
+    | grp_bfs_Pipeline_loop_neighbors_fu_206/icmp_ln28_reg_383_reg[0]  | FLOP_LATCH.flop.FDRE |
+    | grp_bfs_Pipeline_loop_neighbors_fu_206/cnt_1_0_loc_fu_84[63]_i_1 | LUT.others.LUT4      |
+    | cnt_1_0_loc_fu_84_reg[17]                                        | FLOP_LATCH.flop.FDRE |
+    +------------------------------------------------------------------+----------------------+
+
+    +------------------------------------------------------------------+----------------------+
+    | Path5 Cells                                                      | Primitive Type       |
+    +------------------------------------------------------------------+----------------------+
+    | grp_bfs_Pipeline_loop_neighbors_fu_206/icmp_ln28_reg_383_reg[0]  | FLOP_LATCH.flop.FDRE |
+    | grp_bfs_Pipeline_loop_neighbors_fu_206/cnt_1_0_loc_fu_84[63]_i_1 | LUT.others.LUT4      |
+    | cnt_1_0_loc_fu_84_reg[22]                                        | FLOP_LATCH.flop.FDRE |
+    +------------------------------------------------------------------+----------------------+
+
+
+================================================================
+== Place & Route Vivado Reports
+================================================================
++--------------------------+-------------------------------------------------------------+
+| Report Type              | Report Location                                             |
++--------------------------+-------------------------------------------------------------+
+| design_analysis          | impl/verilog/report/bfs_design_analysis_routed.rpt          |
+| failfast                 | impl/verilog/report/bfs_failfast_routed.rpt                 |
+| status                   | impl/verilog/report/bfs_status_routed.rpt                   |
+| timing                   | impl/verilog/report/bfs_timing_routed.rpt                   |
+| timing_paths             | impl/verilog/report/bfs_timing_paths_routed.rpt             |
+| utilization              | impl/verilog/report/bfs_utilization_routed.rpt              |
+| utilization_hierarchical | impl/verilog/report/bfs_utilization_hierarchical_routed.rpt |
++--------------------------+-------------------------------------------------------------+
+
+

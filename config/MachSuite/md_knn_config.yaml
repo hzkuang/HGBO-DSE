@@ -1,0 +1,53 @@
+top:
+    - md_kernel
+funcList:
+    - 
+loopList:
+    group1:
+        level:
+            - md_kernel/loop_i
+            - md_kernel/loop_j
+        unroll:
+            - md_kernel/loop_i
+            - md_kernel/loop_j
+        pipeline:
+            - md_kernel/loop_i
+            - md_kernel/loop_j
+        flatten:
+            - 
+arrList:
+    -
+interList:
+    - md_kernel force_x
+    - md_kernel force_y
+    - md_kernel force_z
+    - md_kernel position_x
+    - md_kernel position_y
+    - md_kernel position_z
+    - md_kernel NL
+dictOp:
+    int:
+        -
+    float:
+        -
+    double:
+        md_kernel/loop_j delx:
+            - dsub
+        md_kernel/loop_j dely:
+            - dsub
+        md_kernel/loop_j delz:
+            - dsub
+        md_kernel/loop_j r2inv:
+            - dmul
+        md_kernel/loop_j r6inv:
+            - dmul
+        md_kernel/loop_j potential:
+            - dmul
+        md_kernel/loop_j fx:
+            - dmul
+        md_kernel/loop_j fy:
+            - dmul
+        md_kernel/loop_j fz:
+            - dmul
+    half:
+        -

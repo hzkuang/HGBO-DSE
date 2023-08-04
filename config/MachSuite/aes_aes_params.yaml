@@ -1,0 +1,62 @@
+inline:
+  - '-on'
+  - '-off'
+balance:
+  - '-on'
+  - '-off'
+style:
+  - stp
+  - flp
+  - frp
+factor:
+  - 0
+  - 2
+state:
+  - '-on'
+  - '-off'
+arrtype:
+  - block
+  - cyclic
+opimpl:
+  int:
+    - dsp
+    - fabric
+  float:
+    - fabric
+    - fulldsp
+    - primitivedsp
+  double:
+    - fabric
+    - fulldsp
+  half:
+    - fabric
+    - fulldsp
+sttype:
+  - ram_1p
+  - ram_1wnr
+  - ram_2p
+  - ram_s2p
+stimpl:
+  - bram
+stltc:
+  - -1
+opltc:
+  - -1
+POW:
+  - 0.361
+CLK:
+  - 7.742
+LATENCY:
+  - 713
+LUT:
+  - 8793
+FF:
+  - 10024
+DSP:
+  - 0
+BRAM:
+  - 4
+URAM:
+  - 0
+SRL:
+  - 2599

@@ -1,0 +1,110 @@
+top:
+    - needwun
+funcList:
+    -
+loopList:
+    group1:
+        level:
+            - needwun/init_row
+        unroll:
+            - needwun/init_row
+        pipeline:
+            - needwun/init_row
+        flatten:
+            - 
+    group2:
+        level:
+            - needwun/init_col
+        unroll:
+            - needwun/init_col
+        pipeline:
+            - needwun/init_col
+        flatten:
+            - 
+    group3:
+        level:
+            - needwun/trace
+        unroll:
+            - needwun/trace
+        pipeline:
+            - needwun/trace
+        flatten:
+            - 
+    group4:
+        level:
+            - needwun/pad_a
+        unroll:
+            - needwun/pad_a
+        pipeline:
+            - needwun/pad_a
+        flatten:
+            - 
+    group5:
+        level:
+            - needwun/pad_b
+        unroll:
+            - needwun/pad_b
+        pipeline:
+            - needwun/pad_b
+        flatten:
+            - 
+    group6:
+        level:
+            - needwun/fill_out
+            - needwun/fill_in
+        unroll:
+            - needwun/fill_out
+            - needwun/fill_in
+        pipeline:
+            - needwun/fill_in
+        flatten:
+            - 
+arrList:
+    -
+interList:
+    - needwun SEQA
+    - needwun SEQB
+    - needwun allignedA
+    - needwun allignedB
+    - needwun M
+    - needwun ptr
+dictOp:
+    int:
+        needwun/fill_in row_up:
+            - mul
+        needwun/fill_in row:
+            - mul
+        needwun/fill_in up_left:
+            - add
+        needwun/fill_in up:
+            - add
+        needwun/fill_in left:
+            - add
+        needwun/trace r:
+            - mul
+        needwun/init_row a_idx:
+            - add
+        needwun/fill_in a_idx:
+            - add
+        needwun/trace a_idx:
+            - sub
+        needwun/init_col b_idx:
+            - add
+        needwun/fill_out b_idx:
+            - add
+        needwun/trace b_idx:
+            - sub
+        needwun/trace a_str_idx:
+            - add
+        needwun/pad_a a_str_idx:
+            - add
+        needwun/trace b_str_idx:
+            - add
+        needwun/pad_b b_str_idx:
+            - add
+    float:
+        -
+    double:
+        -
+    half:
+        -

@@ -1,0 +1,86 @@
+top:
+    - viterbi
+funcList:
+    -
+loopList:
+    group1:
+        level:
+            - viterbi/L_init
+        unroll:
+            - viterbi/L_init
+        pipeline:
+            - viterbi/L_init
+        flatten:
+            - 
+    group2:
+        level:
+            - viterbi/L_end
+        unroll:
+            - viterbi/L_end
+        pipeline:
+            - viterbi/L_end
+        flatten:
+            - 
+    group3:
+        level:
+            - viterbi/L_backtrack
+            - viterbi/L_state
+        unroll:
+            - viterbi/L_backtrack
+            - viterbi/L_state
+        pipeline:
+            - viterbi/L_backtrack
+            - viterbi/L_state
+        flatten:
+            - 
+    group4:
+        level:
+            - viterbi/L_timestep
+            - viterbi/L_curr_state
+            - viterbi/L_prev_state
+        unroll:
+            - viterbi/L_timestep
+            - viterbi/L_curr_state
+            - viterbi/L_prev_state
+        pipeline:
+            - viterbi/L_curr_state
+            - viterbi/L_prev_state
+        flatten:
+            - viterbi/L_timestep    
+arrList:
+    - viterbi llike
+interList:
+    - viterbi obs
+    - viterbi init
+    - viterbi transition
+    - viterbi emission
+    - viterbi path
+dictOp:
+    int:
+        viterbi/L_timestep t:
+            - add
+        viterbi/L_backtrack t:
+            - sub
+        viterbi/L_prev_state prev:
+            - add
+        viterbi/L_curr_state curr:
+            - add
+        viterbi/L_init s:
+            - add
+        viterbi/L_end s:
+            - add
+        viterbi/L_state s:
+            - add
+    float:
+        -
+    double:
+        viterbi/L_curr_state min_p:
+            - dadd
+        viterbi/L_backtrack min_p:
+            - dadd
+        viterbi/L_prev_state p:
+            - dadd
+        viterbi/L_state p:
+            - dadd
+    half:
+        -

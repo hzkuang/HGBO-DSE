@@ -1,0 +1,17 @@
+node_id,node_name,node_type,line_num,rtl_name,op_type,bitwidth,direction,if_type,array_size
+0_1,cnt,1,0,not_exist,not_exist,64,0,0,0
+0_2,tmp_begin,1,0,not_exist,not_exist,64,0,0,0
+0_3,tmp_end,1,0,not_exist,not_exist,64,0,0,0
+0_4,edges_0,1,0,not_exist,not_exist,64,0,1,2048
+0_5,edges_1,1,0,not_exist,not_exist,64,0,1,2048
+0_6,level,1,0,not_exist,not_exist,8,2,1,256
+0_7,empty,1,0,not_exist,not_exist,8,0,0,0
+0_8,cnt_1_0_out,1,0,not_exist,not_exist,64,1,0,0
+0_9,cnt_2_0_out,1,0,not_exist,not_exist,64,1,0,0
+1_1,nodes,1,0,not_exist,not_exist,128,0,1,256
+1_2,edges_0,1,0,not_exist,not_exist,64,0,1,2048
+1_3,edges_1,1,0,not_exist,not_exist,64,0,1,2048
+1_4,starting_node,1,0,not_exist,not_exist,64,0,0,0
+1_5,level,1,0,not_exist,not_exist,8,2,1,256
+1_6,level_counts_0,1,0,not_exist,not_exist,64,1,1,5
+1_7,level_counts_1,1,0,not_exist,not_exist,64,1,1,5

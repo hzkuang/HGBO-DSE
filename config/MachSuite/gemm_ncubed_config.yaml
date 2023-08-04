@@ -1,0 +1,46 @@
+top:
+    - gemm
+funcList:
+    -
+loopList:
+    group1:
+        level:
+            - gemm/outer
+            - gemm/middle
+            - gemm/inner
+        unroll:
+            - gemm/outer
+            - gemm/middle
+            - gemm/inner
+        pipeline:
+            - gemm/middle
+            - gemm/inner
+        flatten:
+            - gemm/outer
+arrList:
+    -
+interList:
+    - gemm m1
+    - gemm m2
+    - gemm prod
+dictOp:
+    int:
+        gemm/outer i:
+            - add
+        gemm/middle j:
+            - add
+        gemm/middle i_col:
+            - mul
+        gemm/inner k:
+            - add
+        gemm/inner k_col:
+            - mul
+    float:
+        -
+    double:
+        gemm/inner sum:
+            - dadd
+        gemm/inner mult:
+            - dmul
+    half:
+        -

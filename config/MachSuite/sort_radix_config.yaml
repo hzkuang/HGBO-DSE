@@ -1,0 +1,136 @@
+top:
+    - ss_sort
+funcList:
+    - init
+    - hist
+    - local_scan
+    - sum_scan
+    - last_step_scan
+    - update
+loopList:
+    group1:
+        level:
+            - ss_sort/sort_1
+        unroll:
+            - ss_sort/sort_1
+        pipeline:
+            - 
+        flatten:
+            - 
+    group2:
+        level:
+            - init/init_1
+        unroll:
+            - init/init_1
+        pipeline:
+            - init/init_1
+        flatten:
+            - 
+    group3:
+        level:
+            - sum_scan/sum_1
+        unroll:
+            - sum_scan/sum_1
+        pipeline:
+            - sum_scan/sum_1
+        flatten:
+            - 
+    group4:
+        level:
+            - local_scan/local_1
+            - local_scan/local_2
+        unroll:
+            - local_scan/local_1
+            - local_scan/local_2
+        pipeline:
+            - local_scan/local_1
+            - local_scan/local_2
+        flatten:
+            - local_scan/local_1
+    group5:
+        level:
+            - last_step_scan/last_1
+            - last_step_scan/last_2
+        unroll:
+            - last_step_scan/last_1
+            - last_step_scan/last_2
+        pipeline:
+            - last_step_scan/last_1
+            - last_step_scan/last_2
+        flatten:
+            - last_step_scan/last_1
+    group6:
+        level:
+            - hist/hist_1
+            - hist/hist_2
+        unroll:
+            - hist/hist_1
+            - hist/hist_2
+        pipeline:
+            - hist/hist_1
+            - hist/hist_2
+        flatten:
+            - hist/hist_1
+    group7:
+        level:
+            - update/update_1
+            - update/update_2
+        unroll:
+            - update/update_1
+            - update/update_2
+        pipeline:
+            - update/update_1
+            - update/update_2
+        flatten:
+            - update/update_1
+arrList:
+    -
+interList:
+    - ss_sort a
+    - ss_sort b
+    - ss_sort bucket
+    - ss_sort sum
+dictOp:
+    int:
+        ss_sort/sort_1 exp:
+            - add
+        init/init_1 i:
+            - add
+        hist/hist_1 blockID:
+            - add
+        hist/hist_2 i:
+            - add
+        hist/hist_2 bucket_indx:
+            - mul
+        hist/hist_2 a_indx:
+            - mul
+        local_scan/local_1 radixID:
+            - add
+        local_scan/local_2 i:
+            - add
+        local_scan/local_2 bucket_indx:
+            - mul
+        sum_scan/sum_1 radixID:
+            - add
+        sum_scan/sum_1 bucket_indx:
+            - mul
+        last_step_scan/last_1 radixID:
+            - add
+        last_step_scan/last_2 i:
+            - add
+        last_step_scan/last_2 bucket_indx:
+            - mul
+        update/update_1 blockID:
+            - add
+        update/update_2 bucket_indx:
+            - mul
+        update/update_2 i:
+            - add
+        update/update_2 a_indx:
+            - mul
+    float:
+        -
+    double:
+        -
+    half:
+        -

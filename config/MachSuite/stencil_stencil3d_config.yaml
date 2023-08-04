@@ -1,0 +1,93 @@
+top:
+    - stencil3d
+funcList:
+    -
+loopList:
+    group1:
+        level:
+            - stencil3d/height_bound_col
+            - stencil3d/height_bound_row
+        unroll:
+            - stencil3d/height_bound_col
+            - stencil3d/height_bound_row
+        pipeline:
+            - stencil3d/height_bound_col
+            - stencil3d/height_bound_row
+        flatten:
+            - stencil3d/height_bound_col
+    group2:
+        level:
+            - stencil3d/col_bound_height
+            - stencil3d/col_bound_row
+        unroll:
+            - stencil3d/col_bound_height
+            - stencil3d/col_bound_row
+        pipeline:
+            - stencil3d/col_bound_height
+            - stencil3d/col_bound_row
+        flatten:
+            - stencil3d/col_bound_height
+    group3:
+        level:
+            - stencil3d/row_bound_height
+            - stencil3d/row_bound_col
+        unroll:
+            - stencil3d/row_bound_height
+            - stencil3d/row_bound_col
+        pipeline:
+            - stencil3d/row_bound_height
+            - stencil3d/row_bound_col
+        flatten:
+            - stencil3d/row_bound_height
+    group4:
+        level:
+            - stencil3d/loop_height
+            - stencil3d/loop_col
+            - stencil3d/loop_row
+        unroll:
+            - stencil3d/loop_height
+            - stencil3d/loop_col
+            - stencil3d/loop_row
+        pipeline:
+            - stencil3d/loop_col
+            - stencil3d/loop_row
+        flatten:
+            - stencil3d/loop_height
+            - stencil3d/loop_col
+arrList:
+    - 
+interList:
+    - stencil3d orig
+    - stencil3d sol
+dictOp:
+    int:
+        stencil3d/loop_row sum1:
+            - add
+        stencil3d/loop_row mul0:
+            - mul
+        stencil3d/loop_row mul1:
+            - mul
+        stencil3d/col_bound_height i:
+            - add
+        stencil3d/row_bound_height i:
+            - add
+        stencil3d/loop_height i:
+            - add
+        stencil3d/height_bound_col j:
+            - add
+        stencil3d/row_bound_col j:
+            - add
+        stencil3d/loop_col j:
+            - add
+        stencil3d/height_bound_row k:
+            - add
+        stencil3d/col_bound_row k:
+            - add
+        stencil3d/loop_row k:
+            - add
+    float:
+        -
+    double:
+        -
+    half:
+        -

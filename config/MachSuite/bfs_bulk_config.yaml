@@ -1,0 +1,41 @@
+top:
+    - bfs
+funcList:
+    -
+loopList:
+    group1:
+        level:
+            - bfs/loop_horizons
+            - bfs/loop_nodes
+            - bfs/loop_neighbors
+        unroll:
+            - bfs/loop_horizons
+            - bfs/loop_nodes
+            - bfs/loop_neighbors
+        pipeline:
+            - bfs/loop_neighbors
+        flatten:
+            - 
+arrList:
+    -
+interList:
+    - bfs nodes
+    - bfs edges
+    - bfs level
+    - bfs level_counts
+dictOp:
+    int:
+        bfs/loop_horizons horizon:
+            - add
+        bfs/loop_nodes n:
+            - add
+        bfs/loop_neighbors e:
+            - add
+        bfs/loop_neighbors cnt:
+            - add
+    float:
+        -
+    double:
+        -
+    half:
+        -

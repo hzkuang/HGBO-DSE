@@ -1,0 +1,38 @@
+top:
+    - fft
+funcList:
+    -
+loopList:
+    group1:
+        level:
+            - fft/outer
+            - fft/inner
+        unroll:
+            - fft/outer
+            - fft/inner
+        pipeline:
+            - fft/outer
+            - fft/inner
+        flatten:
+            -   
+arrList:
+    -
+interList:
+    - fft real
+    - fft img
+    - fft real_twid
+    - fft img_twid
+dictOp:
+    int:
+        fft/inner odd:
+            - add
+        fft/outer log:
+            - add
+    float:
+        -
+    double:
+        fft/inner temp:
+            - dadd
+            - dmul
+    half:
+        -
