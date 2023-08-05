@@ -1,5 +1,7 @@
 ## Raw HLS Dataset
-This folder contains 10 sub-datasets with over 10,000 samples. 
+Available at https://pan.baidu.com/s/12rG1JeOh0VKh-UVotlaWQw. (Extraction code: vuuw)
+
+This dataset contains 10 sub-datasets with over 10,000 samples. 
 Each sub-dataset has over 1,000 samples.
 
 For each sample prj_*, we collect 4-level files:
